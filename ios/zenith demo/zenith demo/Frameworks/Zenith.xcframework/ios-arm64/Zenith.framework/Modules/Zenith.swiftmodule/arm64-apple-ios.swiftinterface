@@ -1,0 +1,299 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Zenith
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AuthenticationServices
+import CommonCrypto
+import Foundation
+import ObjectiveC
+import Security
+import StoreKit
+import Swift
+import UIKit
+import UserNotifications
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @objc public class ZenithUpdateVersion : ObjectiveC.NSObject, Swift.Codable {
+  public var forceUpdate: Swift.Bool
+  public var updateURL: Swift.String?
+  public var latestVersion: Swift.String?
+  @objc public func toString() -> Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers @objc public class ZenithMaintenanceInfo : ObjectiveC.NSObject, Swift.Codable {
+  final public let isMaintenance: Swift.Bool
+  final public let endTime: Swift.String
+  final public let message: Swift.String
+  final public let maintenanceURL: Swift.String?
+  @objc public func toString() -> Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class ZenithBlacklistInfo : ObjectiveC.NSObject {
+  @objc public var error: Swift.String?
+  @objc public var message: Swift.String?
+  @objc public var reason: Swift.String?
+  @objc public var banType: Swift.String?
+  @objc public var banUntil: Swift.String?
+  @objc public var helpURL: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var banUntilFormatted: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc convenience public init(error: Swift.String? = nil, message: Swift.String? = nil, reason: Swift.String? = nil, banType: Swift.String? = nil, banUntil: Swift.String? = nil, helpURL: Swift.String? = nil)
+  #endif
+  @objc public init(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+@objc @objcMembers public class ZenithGameState : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(level: Swift.Int?, parameters: [Swift.String : Any]?)
+  #endif
+  @objc deinit
+}
+@objc @objcMembers public class CampaignActiveInfo : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let logId: Swift.String
+  @objc final public let campaignId: Swift.String
+  @objc final public let slug: Swift.String
+  @objc final public let title: Swift.String
+  @objc final public let imageUrl: Swift.String?
+  final public let productId: Swift.Int?
+  @objc final public let platformProductId: Swift.String
+  @objc final public let expiresAt: Swift.String?
+  final public let purchaseLimit: Swift.Int?
+  @objc final public let productName: Swift.String?
+  final public let bundleId: Swift.Int?
+  @objc final public let productType: Swift.String?
+  final public let pricing: Zenith.CampaignPricing?
+  final public let bundle: Zenith.CampaignBundle?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public struct CampaignPricing : Swift.Codable {
+  public let currency: Swift.String?
+  public let amountMinor: Swift.Int?
+  public let region: Swift.String?
+  public let platformId: Swift.String?
+  public let source: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CampaignBundle : Swift.Codable {
+  public let id: Swift.Int?
+  public let name: Swift.String?
+  public let bundleType: Swift.String?
+  public let items: [Zenith.CampaignBundleItem]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CampaignBundleItem : Swift.Codable {
+  public let id: Swift.Int?
+  public let itemId: Swift.Int?
+  public let quantity: Swift.Int?
+  public let name: Swift.String?
+  public let thumbnailUrl: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithProduct : ObjectiveC.NSObject {
+  @objc final public let id: Swift.String
+  @objc final public let title: Swift.String
+  @objc final public let descriptionText: Swift.String
+  @objc final public let price: Foundation.Decimal
+  @objc final public let priceLocale: Foundation.Locale
+  @objc final public let currencySymbol: Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class ZenithPurchaseInfo : ObjectiveC.NSObject {
+  @objc public var transactionId: Swift.String
+  @objc public var originalTransactionId: Swift.String
+  @objc public var productId: Swift.String
+  @objc public var price: Swift.String
+  @objc public var currency: Swift.String
+  @objc public var purchaseDate: Foundation.Date?
+  @objc public var expriationDate: Foundation.Date?
+  @objc public var signedDate: Foundation.Date?
+  @objc public var deviceVerification: Foundation.Data?
+  @objc public var deviceVerificationNonce: Foundation.UUID?
+  @objc public func toString() -> Swift.String
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc public func toJsonString() -> Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class ZenithTransaction : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var transactionId: Swift.String
+  @objc public var productId: Swift.String
+  @objc public var price: Swift.String
+  @objc public var currency: Swift.String
+  @objc public var purchaseDate: Foundation.Date?
+  @objc public var gameBundleId: Swift.Int
+  @objc public var thumbnail: Swift.String
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc public func toJsonString() -> Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithSubscriptionStatus : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let productId: Swift.String
+  @objc final public let status: Swift.String
+  @objc final public let startDate: Swift.String
+  @objc final public let endDate: Swift.String
+  @objc final public let autoRenew: Swift.Bool
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithUserInfo : ObjectiveC.NSObject {
+  @objc public var playerId: Swift.String
+  @objc public var email: Swift.String
+  @objc public var emailVerifiedAt: Swift.String?
+  @objc public var id: Swift.String
+  @objc public var isVerifiedProfile: Swift.Bool
+  @objc public var firstName: Swift.String?
+  @objc public var lastName: Swift.String?
+  @objc public var updatedAt: Swift.String?
+  @objc public var gender: Swift.String?
+  @objc public var countryCode: Swift.String?
+  @objc public var phoneNumber: Swift.String?
+  @objc public var createdAt: Swift.String?
+  @objc public var uid: Swift.String?
+  @objc public var phoneVerifiedAt: Swift.String?
+  @objc public var username: Swift.String?
+  @objc public var titles: [Zenith.ZenithUserInfoTitle]
+  @objc public var address: Swift.String?
+  @objc public var birthDate: Swift.String?
+  @objc public var publisherId: Swift.String?
+  @objc public var callingCode: Swift.String?
+  public var canEditUsername: Swift.Bool?
+  @objc public var isGuest: Swift.Bool
+  @objc public var isBanned: Swift.Bool
+  @objc public var socialList: [Zenith.ZenithSocialInfo]
+  @objc public func toDictionary() -> [Swift.String : Any]
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func toJsonString() -> Swift.String?
+  #endif
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithUserInfoTitle : ObjectiveC.NSObject {
+  @objc public var experiencePoints: Swift.Int
+  @objc public var id: Swift.String
+  @objc public var hierarchy: Zenith.ZenithUserInfoHierarchy?
+  @objc public var monarchy: Zenith.ZenithUserInfoMonarchy?
+  @objc public var currentExperiencePoints: Swift.Int
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithUserInfoHierarchy : ObjectiveC.NSObject {
+  @objc public var slug: Swift.String
+  @objc public var thumbnail: Swift.String
+  @objc public var id: Swift.String
+  @objc public var requiredTotalExp: Swift.Int
+  @objc public var level: Swift.Int
+  @objc public var descriptionText: Swift.String?
+  @objc public var requiredExp: Swift.Int
+  @objc public var name: Swift.String
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithUserInfoMonarchy : ObjectiveC.NSObject {
+  @objc public var id: Swift.String
+  @objc public var slug: Swift.String
+  @objc public var name: Swift.String
+  @objc public var descriptionText: Swift.String?
+  @objc public var thumbnail: Swift.String?
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithSocialInfo : ObjectiveC.NSObject {
+  @objc final public let id: Swift.String?
+  @objc final public let providerUserId: Swift.String?
+  @objc final public let provider: Zenith.ZenithSignInType
+  final public let socialProvider: Zenith.ZenithSocialProvider?
+  @objc final public let email: Swift.String?
+  @objc final public let name: Swift.String?
+  @objc final public let nickname: Swift.String?
+  @objc final public let avatar: Swift.String?
+  @objc final public let userId: Swift.String?
+  @objc final public let canLink: Swift.Bool
+  @objc final public let linkedAt: Swift.String?
+  @objc final public let canUnlink: Swift.Bool
+  @objc final public let canUnlinkAfter: Swift.String?
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+@objc public enum ZenithSignInType : Swift.Int {
+  case guest = 1
+  case oauth = 2
+  public func toString() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func fromString(_ type: Swift.String) -> Zenith.ZenithSignInType?
+  #endif
+  public static let allCases: [Zenith.ZenithSignInType]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum ZenithSocialProvider : Swift.Int {
+  case google = 0
+  case apple = 1
+  public func toString() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_Concurrency.MainActor public protocol ZenithPurchaseDelegate {
+  @objc @_Concurrency.MainActor func ZenithPurchaseSuccess(_ info: Zenith.ZenithPurchaseInfo)
+  @objc @_Concurrency.MainActor func ZenithPurchaseFail(_ error: Foundation.NSError)
+  @objc @_Concurrency.MainActor func ZenithPurchaseCancel()
+}
+@objc public protocol ZenithNotificationDelegate {
+  @objc func didReceivePushNotification(userInfo: [Swift.AnyHashable : Any])
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ZenithNotificationManager : ObjectiveC.NSObject, UserNotifications.UNUserNotificationCenterDelegate {
+  @objc public static let shared: Zenith.ZenithNotificationManager
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func configure(delegate: (any Zenith.ZenithNotificationDelegate)?)
+  #endif
+  @objc public func updateFCMToken(_ token: Swift.String)
+  public func registerForRemoteNotifications()
+  @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
+  @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ZenithApp : ObjectiveC.NSObject {
+  @objc public static let shared: Zenith.ZenithApp
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func setup(apiKey: Swift.String, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func lastSignInType() -> Zenith.ZenithSignInType?
+  #endif
+  @objc public func lastSignInTypeValue() -> Swift.Int
+  @objc public func signIn(type: Zenith.ZenithSignInType, viewController: UIKit.UIViewController, success: @escaping (Zenith.ZenithUserInfo) -> Swift.Void, cancel: @escaping () -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func continueSignIn(success: @escaping (Zenith.ZenithUserInfo) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func getProfile(success: @escaping (Zenith.ZenithUserInfo) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func signout(success: @escaping () -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
+  @objc deinit
+}
+extension Zenith.ZenithSignInType : Swift.Equatable {}
+extension Zenith.ZenithSignInType : Swift.Hashable {}
+extension Zenith.ZenithSignInType : Swift.RawRepresentable {}
+extension Zenith.ZenithSocialProvider : Swift.Equatable {}
+extension Zenith.ZenithSocialProvider : Swift.Hashable {}
+extension Zenith.ZenithSocialProvider : Swift.RawRepresentable {}
