@@ -51,8 +51,13 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
-}
-   implementation(libs.okhttp)
+
+    // Zenith SDK (Local AAR)
+    implementation(files("libs/zenith.aar"))
+
+    // Required SDK transitive dependencies
+    implementation(libs.moshi)
+    implementation(libs.okhttp)
     implementation(libs.logging.interceptor)
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.moshi)
