@@ -1,6 +1,9 @@
 # Generic
 *.log
 .DS_Store
+.env*
+*.swp
+*.bak
 
 # Android
 .gradle/
@@ -11,16 +14,18 @@ local.properties
 .cxx/
 *.apk
 *.aar
-# Note: Keep local AARs if necessary, but typically libs/*.aar is tracked if intended for demo.
-# If you want to ignore the Zenith SDK AAR specifically:
-# android/app/libs/zenith-release.aar
+# Keep local AARs if necessary for demo
+!android/app/libs/zenith.aar
+google-services.json
+*.jks
+*.keystore
 
 # iOS
 build/
 DerivedData/
 *.xcresult
 *.xcuserstate
-xcuserdata/
+userdata/
 *.moved-aside
 *.pbxuser
 !default.pbxuser
@@ -34,8 +39,13 @@ Pods/
 .xcworkspace/
 # Xcode layout file
 *.xccheckout
-# Profiles
+# Firebase
+GoogleService-Info.plist
+# Profiles & Certificates
 *.mobileprovision
 *.provisionprofile
+*.cert
+*.p12
 # Frameworks (if they are pods or build products)
 # Note: Keep local frameworks if they are required for build.
+!ios/zenith demo/zenith demo/Frameworks/Zenith.xcframework/
