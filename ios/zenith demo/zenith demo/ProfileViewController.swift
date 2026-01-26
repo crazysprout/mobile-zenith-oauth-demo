@@ -22,9 +22,9 @@ class ProfileViewController: UIViewController {
         guard let user = user else { return }
         
         var text = ""
-        text += "ID: \(user.id)\n"
+        text += "ID: \(user.id ?? "-")\n"
         text += "Username: \(user.username ?? "-")\n"
-        text += "Email: \(user.email)\n"
+        text += "Email: \(user.email ?? "-")\n"
         text += "Verified: \(user.isVerifiedProfile)\n"
         text += "Guest: \(user.isGuest)\n"
         // Add more fields as needed based on ZenithUserInfo

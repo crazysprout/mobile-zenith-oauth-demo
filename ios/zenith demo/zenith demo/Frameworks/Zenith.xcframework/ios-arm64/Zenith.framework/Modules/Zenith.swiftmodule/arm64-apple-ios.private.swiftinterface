@@ -14,28 +14,35 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithUserInfo : ObjectiveC.NSObject {
-  @objc public var playerId: Swift.String
-  @objc public var email: Swift.String
-  @objc public var emailVerifiedAt: Swift.String?
-  @objc public var id: Swift.String
-  @objc public var isVerifiedProfile: Swift.Bool
+  @objc public var id: Swift.String?
+  @objc public var publisherId: Swift.String?
+  @objc public var uid: Swift.String?
+  @objc public var username: Swift.String?
+  @objc public var email: Swift.String?
+  @objc public var callingCode: Swift.String?
+  @objc public var phoneNumber: Swift.String?
   @objc public var firstName: Swift.String?
   @objc public var lastName: Swift.String?
-  @objc public var updatedAt: Swift.String?
+  @objc public var birthDate: Swift.String?
   @objc public var gender: Swift.String?
   @objc public var countryCode: Swift.String?
-  @objc public var phoneNumber: Swift.String?
-  @objc public var createdAt: Swift.String?
-  @objc public var phoneVerifiedAt: Swift.String?
-  @objc public var username: Swift.String?
-  @objc public var titles: [Zenith.ZenithUserInfoTitle]
   @objc public var address: Swift.String?
-  @objc public var birthDate: Swift.String?
-  @objc public var callingCode: Swift.String?
-  public var canEditUsername: Swift.Bool?
+  @objc public var emailVerifiedAt: Swift.String?
+  @objc public var phoneVerifiedAt: Swift.String?
+  @objc public var isVerifiedProfile: Swift.Bool
+  @objc public var createdAt: Swift.String?
+  @objc public var updatedAt: Swift.String?
+  @objc public var titles: [Zenith.ZenithUserInfoTitle]
+  @objc public var canEditUsername: Swift.Bool
+  @objc public var socialList: [Zenith.ZenithSocialInfo]
+  @objc public var extra: [Swift.String : Any]?
   @objc public var isGuest: Swift.Bool
   @objc public var isBanned: Swift.Bool
-  @objc public var socialList: [Zenith.ZenithSocialInfo]
+  @objc convenience public init(dictionary: [Swift.String : Any])
+  @objc public func toDictionary() -> [Swift.String : Any]
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func toJsonString() -> Swift.String?
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithUserInfoTitle : ObjectiveC.NSObject {

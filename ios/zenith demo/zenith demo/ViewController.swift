@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     }
         
     private func updateProfileInfo(user: ZenithUserInfo) {
-        idLabel.text = "ID: \(user.id)"
+        idLabel.text = "ID: \(user.id ?? "")"
         nameLabel.text = "Username: \(user.username ?? "")"
     }
     
