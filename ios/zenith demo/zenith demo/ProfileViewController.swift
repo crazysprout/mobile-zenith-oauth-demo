@@ -2,7 +2,6 @@
 //  ProfileViewController.swift
 //  zenith demo
 //
-//  Created by Rattanatut Pluwungkan on 23/1/2569 BE.
 //
 
 import UIKit

@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  zenith demo
 //
-//  Created by Rattanatut Pluwungkan on 21/1/2569 BE.
 //
 
 import UIKit
