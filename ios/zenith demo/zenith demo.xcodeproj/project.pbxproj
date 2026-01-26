@@ -34,7 +34,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		014011132F26CF7F00674539 /* Exceptions for "zenith demo" folder in "Embed Frameworks" phase from "zenith demo" target */ = {
+		0186EC202F2731C800311CFA /* Exceptions for "zenith demo" folder in "Embed Frameworks" phase from "zenith demo" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			attributesByRelativePath = {
 				Frameworks/Zenith.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
@@ -51,7 +51,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				01975EC72F20BB980012884C /* Exceptions for "zenith demo" folder in "zenith demo" target */,
-				014011132F26CF7F00674539 /* Exceptions for "zenith demo" folder in "Embed Frameworks" phase from "zenith demo" target */,
+				0186EC202F2731C800311CFA /* Exceptions for "zenith demo" folder in "Embed Frameworks" phase from "zenith demo" target */,
 			);
 			path = "zenith demo";
 			sourceTree = "<group>";
