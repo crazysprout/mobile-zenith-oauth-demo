@@ -70,6 +70,2566 @@
         "moduleName": "Zenith"
       },
       {
+        "kind": "TypeDecl",
+        "name": "ZenithProduct",
+        "printedName": "ZenithProduct",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithProduct(py)id",
+            "mangledName": "$s6Zenith0A7ProductC2idSSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithProduct(im)id",
+                "mangledName": "$s6Zenith0A7ProductC2idSSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithProduct(py)title",
+            "mangledName": "$s6Zenith0A7ProductC5titleSSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithProduct(im)title",
+                "mangledName": "$s6Zenith0A7ProductC5titleSSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "descriptionText",
+            "printedName": "descriptionText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithProduct(py)descriptionText",
+            "mangledName": "$s6Zenith0A7ProductC15descriptionTextSSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithProduct(im)descriptionText",
+                "mangledName": "$s6Zenith0A7ProductC15descriptionTextSSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "price",
+            "printedName": "price",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Decimal",
+                "printedName": "Foundation.Decimal",
+                "usr": "c:@SA@NSDecimal"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithProduct(py)price",
+            "mangledName": "$s6Zenith0A7ProductC5priceSo9NSDecimalavp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithProduct(im)price",
+                "mangledName": "$s6Zenith0A7ProductC5priceSo9NSDecimalavg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "priceLocale",
+            "printedName": "priceLocale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Locale",
+                "printedName": "Foundation.Locale",
+                "usr": "s:10Foundation6LocaleV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithProduct(py)priceLocale",
+            "mangledName": "$s6Zenith0A7ProductC11priceLocale10Foundation0D0Vvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Locale",
+                    "printedName": "Foundation.Locale",
+                    "usr": "s:10Foundation6LocaleV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithProduct(im)priceLocale",
+                "mangledName": "$s6Zenith0A7ProductC11priceLocale10Foundation0D0Vvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currencySymbol",
+            "printedName": "currencySymbol",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithProduct(py)currencySymbol",
+            "mangledName": "$s6Zenith0A7ProductC14currencySymbolSSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithProduct(im)currencySymbol",
+                "mangledName": "$s6Zenith0A7ProductC14currencySymbolSSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZenithProduct",
+                "printedName": "Zenith.ZenithProduct",
+                "usr": "c:@M@Zenith@objc(cs)ZenithProduct"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Zenith@objc(cs)ZenithProduct(im)init",
+            "mangledName": "$s6Zenith0A7ProductCACycfc",
+            "moduleName": "Zenith",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Zenith@objc(cs)ZenithProduct",
+        "mangledName": "$s6Zenith0A7ProductC",
+        "moduleName": "Zenith",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ZenithPurchaseInfo",
+        "printedName": "ZenithPurchaseInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "transactionId",
+            "printedName": "transactionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(py)transactionId",
+            "mangledName": "$s6Zenith0A12PurchaseInfoC13transactionIdSSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)transactionId",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC13transactionIdSSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)setTransactionId:",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC13transactionIdSSvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A12PurchaseInfoC13transactionIdSSvM",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC13transactionIdSSvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "originalTransactionId",
+            "printedName": "originalTransactionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(py)originalTransactionId",
+            "mangledName": "$s6Zenith0A12PurchaseInfoC21originalTransactionIdSSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)originalTransactionId",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC21originalTransactionIdSSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)setOriginalTransactionId:",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC21originalTransactionIdSSvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A12PurchaseInfoC21originalTransactionIdSSvM",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC21originalTransactionIdSSvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "productId",
+            "printedName": "productId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(py)productId",
+            "mangledName": "$s6Zenith0A12PurchaseInfoC9productIdSSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)productId",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC9productIdSSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)setProductId:",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC9productIdSSvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A12PurchaseInfoC9productIdSSvM",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC9productIdSSvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "price",
+            "printedName": "price",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(py)price",
+            "mangledName": "$s6Zenith0A12PurchaseInfoC5priceSSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)price",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC5priceSSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)setPrice:",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC5priceSSvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A12PurchaseInfoC5priceSSvM",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC5priceSSvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currency",
+            "printedName": "currency",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(py)currency",
+            "mangledName": "$s6Zenith0A12PurchaseInfoC8currencySSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)currency",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC8currencySSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)setCurrency:",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC8currencySSvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A12PurchaseInfoC8currencySSvM",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC8currencySSvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "purchaseDate",
+            "printedName": "purchaseDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(py)purchaseDate",
+            "mangledName": "$s6Zenith0A12PurchaseInfoC12purchaseDate10Foundation0E0VSgvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)purchaseDate",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC12purchaseDate10Foundation0E0VSgvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)setPurchaseDate:",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC12purchaseDate10Foundation0E0VSgvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A12PurchaseInfoC12purchaseDate10Foundation0E0VSgvM",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC12purchaseDate10Foundation0E0VSgvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expirationDate",
+            "printedName": "expirationDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(py)expirationDate",
+            "mangledName": "$s6Zenith0A12PurchaseInfoC14expirationDate10Foundation0E0VSgvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)expirationDate",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC14expirationDate10Foundation0E0VSgvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)setExpirationDate:",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC14expirationDate10Foundation0E0VSgvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A12PurchaseInfoC14expirationDate10Foundation0E0VSgvM",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC14expirationDate10Foundation0E0VSgvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "signedDate",
+            "printedName": "signedDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(py)signedDate",
+            "mangledName": "$s6Zenith0A12PurchaseInfoC10signedDate10Foundation0E0VSgvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)signedDate",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC10signedDate10Foundation0E0VSgvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)setSignedDate:",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC10signedDate10Foundation0E0VSgvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A12PurchaseInfoC10signedDate10Foundation0E0VSgvM",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC10signedDate10Foundation0E0VSgvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceVerification",
+            "printedName": "deviceVerification",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(py)deviceVerification",
+            "mangledName": "$s6Zenith0A12PurchaseInfoC18deviceVerification10Foundation4DataVSgvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)deviceVerification",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC18deviceVerification10Foundation4DataVSgvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)setDeviceVerification:",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC18deviceVerification10Foundation4DataVSgvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A12PurchaseInfoC18deviceVerification10Foundation4DataVSgvM",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC18deviceVerification10Foundation4DataVSgvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceVerificationNonce",
+            "printedName": "deviceVerificationNonce",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(py)deviceVerificationNonce",
+            "mangledName": "$s6Zenith0A12PurchaseInfoC23deviceVerificationNonce10Foundation4UUIDVSgvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.UUID?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UUID",
+                        "printedName": "Foundation.UUID",
+                        "usr": "s:10Foundation4UUIDV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)deviceVerificationNonce",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC23deviceVerificationNonce10Foundation4UUIDVSgvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.UUID?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UUID",
+                        "printedName": "Foundation.UUID",
+                        "usr": "s:10Foundation4UUIDV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)setDeviceVerificationNonce:",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC23deviceVerificationNonce10Foundation4UUIDVSgvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A12PurchaseInfoC23deviceVerificationNonce10Foundation4UUIDVSgvM",
+                "mangledName": "$s6Zenith0A12PurchaseInfoC23deviceVerificationNonce10Foundation4UUIDVSgvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toString",
+            "printedName": "toString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)toString",
+            "mangledName": "$s6Zenith0A12PurchaseInfoC8toStringSSyF",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toDictionary",
+            "printedName": "toDictionary()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)toDictionary",
+            "mangledName": "$s6Zenith0A12PurchaseInfoC12toDictionarySDySSypGyF",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toJsonString",
+            "printedName": "toJsonString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)toJsonString",
+            "mangledName": "$s6Zenith0A12PurchaseInfoC12toJsonStringSSyF",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZenithPurchaseInfo",
+                "printedName": "Zenith.ZenithPurchaseInfo",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo(im)init",
+            "mangledName": "$s6Zenith0A12PurchaseInfoCACycfc",
+            "moduleName": "Zenith",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo",
+        "mangledName": "$s6Zenith0A12PurchaseInfoC",
+        "moduleName": "Zenith",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ZenithTransaction",
+        "printedName": "ZenithTransaction",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "transactionId",
+            "printedName": "transactionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(py)transactionId",
+            "mangledName": "$s6Zenith0A11TransactionC13transactionIdSSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)transactionId",
+                "mangledName": "$s6Zenith0A11TransactionC13transactionIdSSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)setTransactionId:",
+                "mangledName": "$s6Zenith0A11TransactionC13transactionIdSSvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A11TransactionC13transactionIdSSvM",
+                "mangledName": "$s6Zenith0A11TransactionC13transactionIdSSvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "productId",
+            "printedName": "productId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(py)productId",
+            "mangledName": "$s6Zenith0A11TransactionC9productIdSSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)productId",
+                "mangledName": "$s6Zenith0A11TransactionC9productIdSSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)setProductId:",
+                "mangledName": "$s6Zenith0A11TransactionC9productIdSSvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A11TransactionC9productIdSSvM",
+                "mangledName": "$s6Zenith0A11TransactionC9productIdSSvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "price",
+            "printedName": "price",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(py)price",
+            "mangledName": "$s6Zenith0A11TransactionC5priceSSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)price",
+                "mangledName": "$s6Zenith0A11TransactionC5priceSSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)setPrice:",
+                "mangledName": "$s6Zenith0A11TransactionC5priceSSvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A11TransactionC5priceSSvM",
+                "mangledName": "$s6Zenith0A11TransactionC5priceSSvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currency",
+            "printedName": "currency",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(py)currency",
+            "mangledName": "$s6Zenith0A11TransactionC8currencySSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)currency",
+                "mangledName": "$s6Zenith0A11TransactionC8currencySSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)setCurrency:",
+                "mangledName": "$s6Zenith0A11TransactionC8currencySSvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A11TransactionC8currencySSvM",
+                "mangledName": "$s6Zenith0A11TransactionC8currencySSvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "purchaseDate",
+            "printedName": "purchaseDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(py)purchaseDate",
+            "mangledName": "$s6Zenith0A11TransactionC12purchaseDate10Foundation0D0VSgvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)purchaseDate",
+                "mangledName": "$s6Zenith0A11TransactionC12purchaseDate10Foundation0D0VSgvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)setPurchaseDate:",
+                "mangledName": "$s6Zenith0A11TransactionC12purchaseDate10Foundation0D0VSgvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A11TransactionC12purchaseDate10Foundation0D0VSgvM",
+                "mangledName": "$s6Zenith0A11TransactionC12purchaseDate10Foundation0D0VSgvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "gameBundleId",
+            "printedName": "gameBundleId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(py)gameBundleId",
+            "mangledName": "$s6Zenith0A11TransactionC12gameBundleIdSivp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)gameBundleId",
+                "mangledName": "$s6Zenith0A11TransactionC12gameBundleIdSivg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)setGameBundleId:",
+                "mangledName": "$s6Zenith0A11TransactionC12gameBundleIdSivs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A11TransactionC12gameBundleIdSivM",
+                "mangledName": "$s6Zenith0A11TransactionC12gameBundleIdSivM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "thumbnail",
+            "printedName": "thumbnail",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(py)thumbnail",
+            "mangledName": "$s6Zenith0A11TransactionC9thumbnailSSvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)thumbnail",
+                "mangledName": "$s6Zenith0A11TransactionC9thumbnailSSvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)setThumbnail:",
+                "mangledName": "$s6Zenith0A11TransactionC9thumbnailSSvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A11TransactionC9thumbnailSSvM",
+                "mangledName": "$s6Zenith0A11TransactionC9thumbnailSSvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toDictionary",
+            "printedName": "toDictionary()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)toDictionary",
+            "mangledName": "$s6Zenith0A11TransactionC12toDictionarySDySSypGyF",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toJsonString",
+            "printedName": "toJsonString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithTransaction(im)toJsonString",
+            "mangledName": "$s6Zenith0A11TransactionC12toJsonStringSSyF",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZenithTransaction",
+                "printedName": "Zenith.ZenithTransaction",
+                "usr": "c:@M@Zenith@objc(cs)ZenithTransaction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6Zenith0A11TransactionC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s6Zenith0A11TransactionC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Zenith",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Zenith0A11TransactionC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s6Zenith0A11TransactionC6encode2toys7Encoder_p_tKF",
+            "moduleName": "Zenith",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Zenith@objc(cs)ZenithTransaction",
+        "mangledName": "$s6Zenith0A11TransactionC",
+        "moduleName": "Zenith",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -126,6 +2686,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -243,6 +2804,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -360,6 +2922,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -477,6 +3040,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -594,6 +3158,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -711,6 +3276,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -828,6 +3394,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -945,6 +3512,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -1062,6 +3630,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -1179,6 +3748,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -1296,6 +3866,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -1413,6 +3984,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -1530,6 +4102,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -1647,6 +4220,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -1764,6 +4338,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -1873,6 +4448,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -1974,6 +4550,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -2091,6 +4668,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -2208,6 +4786,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -2317,6 +4896,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -2418,6 +4998,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -2548,6 +5129,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -2683,6 +5265,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -2776,6 +5359,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -2923,6 +5507,7 @@
             "moduleName": "Zenith",
             "declAttributes": [
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -2953,6 +5538,7 @@
             "moduleName": "Zenith",
             "declAttributes": [
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -3089,6 +5675,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -3181,6 +5768,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -3282,6 +5870,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -3399,6 +5988,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -3507,6 +6097,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -3712,6 +6303,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -3804,6 +6396,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -3896,6 +6489,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -3988,6 +6582,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -4080,6 +6675,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -4181,6 +6777,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -4289,6 +6886,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -4381,6 +6979,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -4586,6 +7185,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -4678,6 +7278,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -4770,6 +7371,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -4871,6 +7473,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -4988,6 +7591,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "hasStorage": true,
@@ -5218,6 +7822,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "isLet": true,
@@ -5284,6 +7889,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "isLet": true,
@@ -5342,6 +7948,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "isLet": true,
@@ -5399,7 +8006,8 @@
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -5464,6 +8072,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "isLet": true,
@@ -5530,6 +8139,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "isLet": true,
@@ -5596,6 +8206,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "isLet": true,
@@ -5662,6 +8273,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "isLet": true,
@@ -5728,6 +8340,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "isLet": true,
@@ -5786,6 +8399,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "isLet": true,
@@ -5844,6 +8458,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "isLet": true,
@@ -5902,6 +8517,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "isLet": true,
@@ -5960,6 +8576,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "isLet": true,
@@ -6162,6 +8779,7 @@
             "mangledName": "$s6Zenith0A10SignInTypeO5guestyA2CmF",
             "moduleName": "Zenith",
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "fixedbinaryorder": 0
@@ -6203,6 +8821,7 @@
             "mangledName": "$s6Zenith0A10SignInTypeO5oauthyA2CmF",
             "moduleName": "Zenith",
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "fixedbinaryorder": 1
@@ -6224,7 +8843,8 @@
             "mangledName": "$s6Zenith0A10SignInTypeO8toStringSSyF",
             "moduleName": "Zenith",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -6260,7 +8880,8 @@
             "moduleName": "Zenith",
             "static": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -6292,7 +8913,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -6406,7 +9028,8 @@
         "moduleName": "Zenith",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -6511,6 +9134,7 @@
             "mangledName": "$s6Zenith0A14SocialProviderO6googleyA2CmF",
             "moduleName": "Zenith",
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "fixedbinaryorder": 0
@@ -6552,6 +9176,7 @@
             "mangledName": "$s6Zenith0A14SocialProviderO5appleyA2CmF",
             "moduleName": "Zenith",
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "fixedbinaryorder": 1
@@ -6573,7 +9198,8 @@
             "mangledName": "$s6Zenith0A14SocialProviderO8toStringSSyF",
             "moduleName": "Zenith",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -6656,7 +9282,8 @@
         "moduleName": "Zenith",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -7156,7 +9783,8 @@
             "moduleName": "Zenith",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7423,6 +10051,233 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchProducts",
+            "printedName": "fetchProducts(success:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Zenith.ZenithProduct]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Zenith.ZenithProduct]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZenithProduct",
+                        "printedName": "Zenith.ZenithProduct",
+                        "usr": "c:@M@Zenith@objc(cs)ZenithProduct"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)fetchProductsWithSuccess:failure:",
+            "mangledName": "$s6Zenith0A3AppC13fetchProducts7success7failureyySayAA0A7ProductCGc_ys5Error_pctF",
+            "moduleName": "Zenith",
+            "objc_name": "fetchProductsWithSuccess:failure:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "purchaseProduct",
+            "printedName": "purchaseProduct(productId:success:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Zenith.ZenithPurchaseInfo) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZenithPurchaseInfo",
+                    "printedName": "Zenith.ZenithPurchaseInfo",
+                    "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)purchaseProductWithProductId:success:failure:",
+            "mangledName": "$s6Zenith0A3AppC15purchaseProduct9productId7success7failureySS_yAA0A12PurchaseInfoCcys5Error_pctF",
+            "moduleName": "Zenith",
+            "objc_name": "purchaseProductWithProductId:success:failure:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "purchaseHistory",
+            "printedName": "purchaseHistory(success:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Zenith.ZenithTransaction]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Zenith.ZenithTransaction]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZenithTransaction",
+                        "printedName": "Zenith.ZenithTransaction",
+                        "usr": "c:@M@Zenith@objc(cs)ZenithTransaction"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)purchaseHistoryWithSuccess:failure:",
+            "mangledName": "$s6Zenith0A3AppC15purchaseHistory7success7failureyySayAA0A11TransactionCGc_ys5Error_pctF",
+            "moduleName": "Zenith",
+            "objc_name": "purchaseHistoryWithSuccess:failure:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPurchaseDelegate",
+            "printedName": "setPurchaseDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ZenithPurchaseDelegate",
+                "printedName": "any Zenith.ZenithPurchaseDelegate",
+                "usr": "c:@M@Zenith@objc(pl)ZenithPurchaseDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)setPurchaseDelegate:",
+            "mangledName": "$s6Zenith0A3AppC19setPurchaseDelegateyyAA0adE0_pF",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -7431,7 +10286,741 @@
         "moduleName": "Zenith",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Zenith"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ZenithPurchaseDelegate",
+        "printedName": "ZenithPurchaseDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "zenithPurchaseSuccess",
+            "printedName": "zenithPurchaseSuccess(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ZenithPurchaseInfo",
+                "printedName": "Zenith.ZenithPurchaseInfo",
+                "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(pl)ZenithPurchaseDelegate(im)zenithPurchaseSuccess:",
+            "mangledName": "$s6Zenith0A16PurchaseDelegateP06zenithB7SuccessyyAA0aB4InfoCF",
+            "moduleName": "Zenith",
+            "genericSig": "<τ_0_0 where τ_0_0 : Zenith.ZenithPurchaseDelegate>",
+            "sugared_genericSig": "<Self where Self : Zenith.ZenithPurchaseDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "zenithPurchaseFailure",
+            "printedName": "zenithPurchaseFailure(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(pl)ZenithPurchaseDelegate(im)zenithPurchaseFailure:",
+            "mangledName": "$s6Zenith0A16PurchaseDelegateP06zenithB7Failureyys5Error_pF",
+            "moduleName": "Zenith",
+            "genericSig": "<τ_0_0 where τ_0_0 : Zenith.ZenithPurchaseDelegate>",
+            "sugared_genericSig": "<Self where Self : Zenith.ZenithPurchaseDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@Zenith@objc(pl)ZenithPurchaseDelegate",
+        "mangledName": "$s6Zenith0A16PurchaseDelegateP",
+        "moduleName": "Zenith",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Zenith"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Zenith"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ZenithAuthDelegate",
+        "printedName": "ZenithAuthDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onSignInSuccess",
+            "printedName": "onSignInSuccess(userInfoJson:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(pl)ZenithAuthDelegate(im)onSignInSuccessWithUserInfoJson:",
+            "mangledName": "$s6Zenith0A12AuthDelegateP15onSignInSuccess12userInfoJsonySS_tF",
+            "moduleName": "Zenith",
+            "genericSig": "<τ_0_0 where τ_0_0 : Zenith.ZenithAuthDelegate>",
+            "sugared_genericSig": "<Self where Self : Zenith.ZenithAuthDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSignInFailure",
+            "printedName": "onSignInFailure(errorMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(pl)ZenithAuthDelegate(im)onSignInFailureWithErrorMessage:",
+            "mangledName": "$s6Zenith0A12AuthDelegateP15onSignInFailure12errorMessageySS_tF",
+            "moduleName": "Zenith",
+            "genericSig": "<τ_0_0 where τ_0_0 : Zenith.ZenithAuthDelegate>",
+            "sugared_genericSig": "<Self where Self : Zenith.ZenithAuthDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSignInCancel",
+            "printedName": "onSignInCancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(pl)ZenithAuthDelegate(im)onSignInCancel",
+            "mangledName": "$s6Zenith0A12AuthDelegateP14onSignInCancelyyF",
+            "moduleName": "Zenith",
+            "genericSig": "<τ_0_0 where τ_0_0 : Zenith.ZenithAuthDelegate>",
+            "sugared_genericSig": "<Self where Self : Zenith.ZenithAuthDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSignOutSuccess",
+            "printedName": "onSignOutSuccess()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(pl)ZenithAuthDelegate(im)onSignOutSuccess",
+            "mangledName": "$s6Zenith0A12AuthDelegateP16onSignOutSuccessyyF",
+            "moduleName": "Zenith",
+            "genericSig": "<τ_0_0 where τ_0_0 : Zenith.ZenithAuthDelegate>",
+            "sugared_genericSig": "<Self where Self : Zenith.ZenithAuthDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSignOutFailure",
+            "printedName": "onSignOutFailure(errorMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(pl)ZenithAuthDelegate(im)onSignOutFailureWithErrorMessage:",
+            "mangledName": "$s6Zenith0A12AuthDelegateP16onSignOutFailure12errorMessageySS_tF",
+            "moduleName": "Zenith",
+            "genericSig": "<τ_0_0 where τ_0_0 : Zenith.ZenithAuthDelegate>",
+            "sugared_genericSig": "<Self where Self : Zenith.ZenithAuthDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onGetProfileSuccess",
+            "printedName": "onGetProfileSuccess(userInfoJson:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(pl)ZenithAuthDelegate(im)onGetProfileSuccessWithUserInfoJson:",
+            "mangledName": "$s6Zenith0A12AuthDelegateP19onGetProfileSuccess12userInfoJsonySS_tF",
+            "moduleName": "Zenith",
+            "genericSig": "<τ_0_0 where τ_0_0 : Zenith.ZenithAuthDelegate>",
+            "sugared_genericSig": "<Self where Self : Zenith.ZenithAuthDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onGetProfileFailure",
+            "printedName": "onGetProfileFailure(errorMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(pl)ZenithAuthDelegate(im)onGetProfileFailureWithErrorMessage:",
+            "mangledName": "$s6Zenith0A12AuthDelegateP19onGetProfileFailure12errorMessageySS_tF",
+            "moduleName": "Zenith",
+            "genericSig": "<τ_0_0 where τ_0_0 : Zenith.ZenithAuthDelegate>",
+            "sugared_genericSig": "<Self where Self : Zenith.ZenithAuthDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@Zenith@objc(pl)ZenithAuthDelegate",
+        "mangledName": "$s6Zenith0A12AuthDelegateP",
+        "moduleName": "Zenith",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ZenithWrapper",
+        "printedName": "ZenithWrapper",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZenithWrapper",
+                "printedName": "Zenith.ZenithWrapper",
+                "usr": "c:@M@Zenith@objc(cs)ZenithWrapper"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithWrapper(cpy)shared",
+            "mangledName": "$s6Zenith0A7WrapperC6sharedACvpZ",
+            "moduleName": "Zenith",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZenithWrapper",
+                    "printedName": "Zenith.ZenithWrapper",
+                    "usr": "c:@M@Zenith@objc(cs)ZenithWrapper"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithWrapper(cm)shared",
+                "mangledName": "$s6Zenith0A7WrapperC6sharedACvgZ",
+                "moduleName": "Zenith",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any Zenith.ZenithAuthDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Zenith@objc(cs)ZenithWrapper(py)delegate",
+            "mangledName": "$s6Zenith0A7WrapperC8delegateAA0A12AuthDelegate_pSgvp",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Zenith.ZenithAuthDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZenithAuthDelegate",
+                        "printedName": "any Zenith.ZenithAuthDelegate",
+                        "usr": "c:@M@Zenith@objc(pl)ZenithAuthDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithWrapper(im)delegate",
+                "mangledName": "$s6Zenith0A7WrapperC8delegateAA0A12AuthDelegate_pSgvg",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Zenith.ZenithAuthDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZenithAuthDelegate",
+                        "printedName": "any Zenith.ZenithAuthDelegate",
+                        "usr": "c:@M@Zenith@objc(pl)ZenithAuthDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Zenith@objc(cs)ZenithWrapper(im)setDelegate:",
+                "mangledName": "$s6Zenith0A7WrapperC8delegateAA0A12AuthDelegate_pSgvs",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A7WrapperC8delegateAA0A12AuthDelegate_pSgvM",
+                "mangledName": "$s6Zenith0A7WrapperC8delegateAA0A12AuthDelegate_pSgvM",
+                "moduleName": "Zenith",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup(apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithWrapper(im)setupWithApiKey:",
+            "mangledName": "$s6Zenith0A7WrapperC5setup6apiKeyySS_tF",
+            "moduleName": "Zenith",
+            "objc_name": "setupWithApiKey:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signIn",
+            "printedName": "signIn(type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithWrapper(im)signInType:",
+            "mangledName": "$s6Zenith0A7WrapperC6signIn4typeySS_tF",
+            "moduleName": "Zenith",
+            "objc_name": "signInType:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signOut",
+            "printedName": "signOut()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithWrapper(im)signOut",
+            "mangledName": "$s6Zenith0A7WrapperC7signOutyyF",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getProfile",
+            "printedName": "getProfile()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithWrapper(im)getProfile",
+            "mangledName": "$s6Zenith0A7WrapperC10getProfileyyF",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "lastSignInType",
+            "printedName": "lastSignInType()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithWrapper(im)lastSignInType",
+            "mangledName": "$s6Zenith0A7WrapperC14lastSignInTypeSSyF",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Zenith@objc(cs)ZenithWrapper",
+        "mangledName": "$s6Zenith0A7WrapperC",
+        "moduleName": "Zenith",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -7622,93 +11211,219 @@
       "value": "\"redirect_uri\""
     },
     {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
+      "kind": "StringLiteral",
+      "offset": 4502,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
+      "kind": "StringLiteral",
+      "offset": 4651,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
+      "kind": "StringLiteral",
+      "offset": 4743,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
+      "kind": "StringLiteral",
+      "offset": 4826,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
+      "kind": "StringLiteral",
+      "offset": 4911,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
+      "kind": "StringLiteral",
+      "offset": 10056,
+      "length": 16,
+      "value": "\"transaction_id\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
+      "kind": "StringLiteral",
+      "offset": 10098,
+      "length": 12,
+      "value": "\"product_id\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
+      "kind": "StringLiteral",
+      "offset": 10180,
+      "length": 15,
+      "value": "\"purchase_date\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
+      "kind": "StringLiteral",
+      "offset": 10224,
+      "length": 16,
+      "value": "\"game_bundle_id\""
+    },
+    {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 4324,
+      "offset": 2387,
+      "length": 11,
+      "value": "\"player_id\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 2428,
+      "length": 16,
+      "value": "\"transaction_id\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 2482,
+      "length": 25,
+      "value": "\"original_transaction_id\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 2533,
+      "length": 12,
+      "value": "\"product_id\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 2615,
+      "length": 15,
+      "value": "\"purchase_date\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 2657,
+      "length": 13,
+      "value": "\"signed_date\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 2705,
+      "length": 21,
+      "value": "\"device_verification\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 2766,
+      "length": 27,
+      "value": "\"device_verification_nonce\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 2820,
       "length": 13,
       "value": "\"identify_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 4366,
+      "offset": 4331,
+      "length": 13,
+      "value": "\"identify_id\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 4373,
       "length": 15,
       "value": "\"refresh_token\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 4428,
+      "offset": 4435,
       "length": 11,
       "value": "\"client_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/UserInfo.swift",
       "kind": "BooleanLiteral",
-      "offset": 657,
+      "offset": 1438,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/UserInfo.swift",
       "kind": "Array",
-      "offset": 778,
+      "offset": 1718,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/UserInfo.swift",
       "kind": "BooleanLiteral",
-      "offset": 820,
+      "offset": 1832,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/UserInfo.swift",
       "kind": "Array",
-      "offset": 874,
+      "offset": 1931,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/UserInfo.swift",
       "kind": "BooleanLiteral",
-      "offset": 945,
+      "offset": 2133,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/UserInfo.swift",
       "kind": "BooleanLiteral",
-      "offset": 983,
+      "offset": 2230,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ZenithSignInType.swift",
       "kind": "IntegerLiteral",
-      "offset": 78,
+      "offset": 185,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ZenithSignInType.swift",
       "kind": "IntegerLiteral",
-      "offset": 97,
+      "offset": 272,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ZenithSocialProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 83,
+      "offset": 181,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ZenithSocialProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 102,
+      "offset": 238,
       "length": 1,
       "value": "1"
     },
@@ -7739,6 +11454,27 @@
       "offset": 409,
       "length": 12,
       "value": "\"expires_in\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/ServiceManager\/InAppPurchaseManager.swift",
+      "kind": "Array",
+      "offset": 246,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/ServiceManager\/InAppPurchaseManager.swift",
+      "kind": "Array",
+      "offset": 301,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/ServiceManager\/InAppPurchaseManager.swift",
+      "kind": "StringLiteral",
+      "offset": 359,
+      "length": 27,
+      "value": "\"com.zenith.iap.sync.queue\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/ServiceManager\/KeychainManager.swift",
@@ -7932,28 +11668,28 @@
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Zenith.swift",
       "kind": "StringLiteral",
-      "offset": 287,
+      "offset": 454,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Zenith.swift",
       "kind": "StringLiteral",
-      "offset": 326,
+      "offset": 493,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Zenith.swift",
       "kind": "StringLiteral",
-      "offset": 411,
+      "offset": 578,
       "length": 9,
       "value": "\"webview\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Zenith.swift",
       "kind": "StringLiteral",
-      "offset": 461,
+      "offset": 628,
       "length": 4,
       "value": "\"th\""
     }

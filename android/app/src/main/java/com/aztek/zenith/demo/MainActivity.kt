@@ -48,6 +48,7 @@ class MainActivity : ComponentActivity() {
         val btnSignOut = findViewById<Button>(R.id.btn_sign_out)
         val btnContinue = findViewById<Button>(R.id.btn_continue)
         val btnGetProfile = findViewById<Button>(R.id.btn_get_profile)
+        val btnIap = findViewById<Button>(R.id.btn_iap)
 
         // Set Listeners
         btnOAuthSignIn.setOnClickListener { handleSignIn(ZenithSignInType.OAUTH) }
@@ -55,6 +56,7 @@ class MainActivity : ComponentActivity() {
         btnSignOut.setOnClickListener { handleSignOut() }
         btnContinue.setOnClickListener { handleContinue() }
         btnGetProfile.setOnClickListener { handleGetProfile() }
+        btnIap.setOnClickListener { startActivity(Intent(this, IapActivity::class.java)) }
 
         // Initial State Check
         checkPreviousSignIn()

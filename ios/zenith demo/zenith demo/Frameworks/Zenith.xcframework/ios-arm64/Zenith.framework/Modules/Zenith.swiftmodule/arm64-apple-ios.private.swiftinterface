@@ -13,6 +13,45 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithProduct : ObjectiveC.NSObject {
+  @objc final public let id: Swift.String
+  @objc final public let title: Swift.String
+  @objc final public let descriptionText: Swift.String
+  @objc final public let price: Foundation.Decimal
+  @objc final public let priceLocale: Foundation.Locale
+  @objc final public let currencySymbol: Swift.String
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithPurchaseInfo : ObjectiveC.NSObject {
+  @objc public var transactionId: Swift.String
+  @objc public var originalTransactionId: Swift.String
+  @objc public var productId: Swift.String
+  @objc public var price: Swift.String
+  @objc public var currency: Swift.String
+  @objc public var purchaseDate: Foundation.Date?
+  @objc public var expirationDate: Foundation.Date?
+  @objc public var signedDate: Foundation.Date?
+  @objc public var deviceVerification: Foundation.Data?
+  @objc public var deviceVerificationNonce: Foundation.UUID?
+  @objc public func toString() -> Swift.String
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc public func toJsonString() -> Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class ZenithTransaction : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var transactionId: Swift.String
+  @objc public var productId: Swift.String
+  @objc public var price: Swift.String
+  @objc public var currency: Swift.String
+  @objc public var purchaseDate: Foundation.Date?
+  @objc public var gameBundleId: Swift.Int
+  @objc public var thumbnail: Swift.String
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc public func toJsonString() -> Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithUserInfo : ObjectiveC.NSObject {
   @objc public var id: Swift.String?
   @objc public var publisherId: Swift.String?
@@ -129,6 +168,33 @@ import _SwiftConcurrencyShims
   @objc public func continueSignIn(success: @escaping (Zenith.ZenithUserInfo) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
   @objc public func getProfile(success: @escaping (Zenith.ZenithUserInfo) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
   @objc public func signout(success: @escaping () -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func fetchProducts(success: @escaping ([Zenith.ZenithProduct]) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func purchaseProduct(productId: Swift.String, success: @escaping (Zenith.ZenithPurchaseInfo) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func purchaseHistory(success: @escaping ([Zenith.ZenithTransaction]) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func setPurchaseDelegate(_ delegate: any Zenith.ZenithPurchaseDelegate)
+  @objc deinit
+}
+@objc public protocol ZenithPurchaseDelegate {
+  @objc func zenithPurchaseSuccess(_ info: Zenith.ZenithPurchaseInfo)
+  @objc func zenithPurchaseFailure(_ error: any Swift.Error)
+}
+@objc public protocol ZenithAuthDelegate {
+  @objc func onSignInSuccess(userInfoJson: Swift.String)
+  @objc func onSignInFailure(errorMessage: Swift.String)
+  @objc func onSignInCancel()
+  @objc func onSignOutSuccess()
+  @objc func onSignOutFailure(errorMessage: Swift.String)
+  @objc func onGetProfileSuccess(userInfoJson: Swift.String)
+  @objc func onGetProfileFailure(errorMessage: Swift.String)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ZenithWrapper : ObjectiveC.NSObject {
+  @objc public static let shared: Zenith.ZenithWrapper
+  @objc weak public var delegate: (any Zenith.ZenithAuthDelegate)?
+  @objc public func setup(apiKey: Swift.String)
+  @objc public func signIn(type: Swift.String)
+  @objc public func signOut()
+  @objc public func getProfile()
+  @objc public func lastSignInType() -> Swift.String
   @objc deinit
 }
 extension Zenith.ZenithSignInType : Swift.Equatable {}

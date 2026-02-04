@@ -48,7 +48,21 @@ class ViewController: UIViewController {
             if let user = user {
                 self.updateProfileInfo(user: user)
             }
+            
+            // Add IAP Button if not already added
+            if self.profileContainer.arrangedSubviews.first(where: { ($0 as? UIButton)?.title(for: .normal) == "In-App Purchase" }) == nil {
+                let iapButton = UIButton(type: .system)
+                iapButton.setTitle("In-App Purchase", for: .normal)
+                iapButton.addTarget(self, action: #selector(self.onIapTapped), for: .touchUpInside)
+                self.profileContainer.addArrangedSubview(iapButton)
+            }
         }
+    }
+    
+    @objc func onIapTapped() {
+        let iapVc = IapViewController()
+        iapVc.modalPresentationStyle = .pageSheet
+        self.present(iapVc, animated: true, completion: nil)
     }
         
     private func updateProfileInfo(user: ZenithUserInfo) {

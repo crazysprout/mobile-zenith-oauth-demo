@@ -52,6 +52,8 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
+    implementation(libs.androidx.recyclerview)
+
     // Zenith SDK (Local AAR)
     implementation(files("libs/zenith.aar"))
 

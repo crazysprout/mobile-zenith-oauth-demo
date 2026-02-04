@@ -37,6 +37,11 @@
             android:exported="false"
             android:label="Profile"
             android:theme="@style/Theme.ZenithDemo" />
+        <activity
+            android:name=".IapActivity"
+            android:exported="false"
+            android:label="In-App Purchase"
+            android:theme="@style/Theme.ZenithDemo" />
     </application>
 
 </manifest>
