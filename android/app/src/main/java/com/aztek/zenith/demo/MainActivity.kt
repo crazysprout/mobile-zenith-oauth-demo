@@ -28,8 +28,7 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.activity_main)
 
         // Staging
-        ZenithApp.setup(this, "724ee152853702540d50e74f29cec33f3c06a6880e578adee0212bc816988d52") {
-                error ->
+        ZenithApp.setup(this, "YOUR_API_KEY") { error ->
 
             // Production
             // ZenithApp.setup(this,
@@ -71,10 +70,10 @@ class MainActivity : ComponentActivity() {
         ZenithApp.handleOpenUrl(intent)
     }
 
-    override fun onNewIntent(intent: Intent?) {
+    override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
         // Handle redirect intent when the activity is already running
-        intent?.let { ZenithApp.handleOpenUrl(it) }
+        ZenithApp.handleOpenUrl(intent)
     }
 
     private fun checkPreviousSignIn() {
