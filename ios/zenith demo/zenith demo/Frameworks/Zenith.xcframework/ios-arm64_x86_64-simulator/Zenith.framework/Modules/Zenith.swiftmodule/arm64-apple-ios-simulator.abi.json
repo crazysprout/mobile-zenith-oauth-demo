@@ -11498,6 +11498,13 @@
       "value": "16"
     },
     {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/ServiceManager\/ZenithSignInManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4163,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 313,

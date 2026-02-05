@@ -30,6 +30,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="YOUR_REDIRECT_SCHEME" />
+                <data android:scheme="9yin-mobileweb" />
             </intent-filter>
         </activity>
         <activity
