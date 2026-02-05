@@ -51,8 +51,11 @@ class ViewController: UIViewController {
             
             // Add IAP Button if not already added
             if self.profileContainer.arrangedSubviews.first(where: { ($0 as? UIButton)?.title(for: .normal) == "In-App Purchase" }) == nil {
-                let iapButton = UIButton(type: .system)
-                iapButton.setTitle("In-App Purchase", for: .normal)
+                var config = UIButton.Configuration.filled()
+                config.title = "In-App Purchase"
+                config.baseBackgroundColor = .systemBlue
+                
+                let iapButton = UIButton(configuration: config)
                 iapButton.addTarget(self, action: #selector(self.onIapTapped), for: .touchUpInside)
                 self.profileContainer.addArrangedSubview(iapButton)
             }
