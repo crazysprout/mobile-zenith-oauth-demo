@@ -19,3 +19,6 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Keep Billing Client classes to prevent potential R8/ProGuard issues
+-keep class com.android.billingclient.** { *; }
