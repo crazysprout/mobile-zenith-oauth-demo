@@ -27,12 +27,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        // Staging
         ZenithApp.setup(this, "YOUR_API_KEY") { error ->
-
-            // Production
-            // ZenithApp.setup(this,
-            // "c142ef4c4e9fae45074b1ee1a0bb9c7219d02b9ddb96fef369b4cb7116f53dee") { error ->
             if (error == null) {
                 runOnUiThread { checkPreviousSignIn() }
             } else {
