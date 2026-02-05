@@ -49,20 +49,11 @@ class ViewController: UIViewController {
                 self.updateProfileInfo(user: user)
             }
             
-            // Add IAP Button if not already added
-            if self.profileContainer.arrangedSubviews.first(where: { ($0 as? UIButton)?.title(for: .normal) == "In-App Purchase" }) == nil {
-                var config = UIButton.Configuration.filled()
-                config.title = "In-App Purchase"
-                config.baseBackgroundColor = .systemBlue
-                
-                let iapButton = UIButton(configuration: config)
-                iapButton.addTarget(self, action: #selector(self.onIapTapped), for: .touchUpInside)
-                self.profileContainer.addArrangedSubview(iapButton)
-            }
+            // IAP Button is now in Storyboard
         }
     }
     
-    @objc func onIapTapped() {
+    @IBAction func onIapTapped(_ sender: Any) {
         let iapVc = IapViewController()
         iapVc.modalPresentationStyle = .pageSheet
         self.present(iapVc, animated: true, completion: nil)

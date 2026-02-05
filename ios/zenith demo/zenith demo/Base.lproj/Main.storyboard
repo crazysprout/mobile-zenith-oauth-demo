@@ -100,6 +100,16 @@
                                                     <action selector="onSignOutTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="act-signout"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iapButton-SB">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="35"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="In-App Purchase">
+                                                    <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onIapTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="act-iap"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
 
