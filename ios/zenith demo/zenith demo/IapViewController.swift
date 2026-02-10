@@ -30,8 +30,12 @@ class IapViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }()
     
     private lazy var closeButton: UIButton = {
-        let btn = UIButton(type: .system)
-        btn.setTitle("Close", for: .normal)
+        var config = UIButton.Configuration.plain()
+        config.title = "Back"
+        config.image = UIImage(systemName: "chevron.backward")
+        config.imagePadding = 5
+        
+        let btn = UIButton(configuration: config)
         btn.addTarget(self, action: #selector(onCloseTapped), for: .touchUpInside)
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
@@ -50,18 +54,17 @@ class IapViewController: UIViewController, UITableViewDataSource, UITableViewDel
         view.addSubview(closeButton)
         
         NSLayoutConstraint.activate([
-            statusLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            closeButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            closeButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            
+            statusLabel.topAnchor.constraint(equalTo: closeButton.bottomAnchor, constant: 10),
             statusLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             statusLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             
             tableView.topAnchor.constraint(equalTo: statusLabel.bottomAnchor, constant: 20),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: closeButton.topAnchor, constant: -20),
-            
-            closeButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
-            closeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            closeButton.heightAnchor.constraint(equalToConstant: 44)
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
     

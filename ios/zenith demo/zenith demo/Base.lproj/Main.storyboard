@@ -169,12 +169,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="closeButton">
-                                <rect key="frame" x="20" y="59" width="44" height="40.333333333333343"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="close-width"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="59" width="80" height="40.333333333333343"/>
+
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system" title=""/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="Back" imagePadding="5"/>
                                 <connections>
                                     <action selector="onCloseTapped:" destination="profile-vc" eventType="touchUpInside" id="act-close"/>
                                 </connections>
@@ -211,7 +209,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
