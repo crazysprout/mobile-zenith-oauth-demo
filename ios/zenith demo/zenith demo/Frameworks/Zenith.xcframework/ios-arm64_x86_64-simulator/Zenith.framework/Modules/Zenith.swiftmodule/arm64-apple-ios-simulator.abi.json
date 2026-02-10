@@ -10054,6 +10054,53 @@
           },
           {
             "kind": "Function",
+            "name": "deleteAccount",
+            "printedName": "deleteAccount(viewController:failure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)deleteAccountWithViewController:failure:",
+            "mangledName": "$s6Zenith0A3AppC13deleteAccount14viewController7failureySo06UIViewF0C_ys5Error_pctF",
+            "moduleName": "Zenith",
+            "objc_name": "deleteAccountWithViewController:failure:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "fetchProducts",
             "printedName": "fetchProducts(success:failure:)",
             "children": [
@@ -11101,112 +11148,119 @@
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2191,
+      "offset": 2321,
       "length": 10,
       "value": "\"core_url\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2225,
+      "offset": 2355,
       "length": 10,
       "value": "\"auth_url\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2264,
+      "offset": 2394,
       "length": 15,
       "value": "\"response_type\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2304,
+      "offset": 2434,
       "length": 11,
       "value": "\"client_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2343,
+      "offset": 2473,
       "length": 14,
       "value": "\"redirect_uri\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2581,
+      "offset": 2520,
+      "length": 20,
+      "value": "\"delete_account_url\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2764,
       "length": 11,
       "value": "\"client_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2616,
+      "offset": 2799,
       "length": 10,
       "value": "\"auth_url\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2651,
+      "offset": 2834,
       "length": 11,
       "value": "\"token_url\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2690,
+      "offset": 2873,
       "length": 14,
       "value": "\"redirect_uri\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2930,
+      "offset": 3113,
       "length": 11,
       "value": "\"client_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2965,
+      "offset": 3148,
       "length": 10,
       "value": "\"auth_url\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3000,
+      "offset": 3183,
       "length": 11,
       "value": "\"token_url\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3039,
+      "offset": 3222,
       "length": 14,
       "value": "\"redirect_uri\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3268,
+      "offset": 3451,
       "length": 18,
       "value": "\"apple_service_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3315,
+      "offset": 3498,
       "length": 16,
       "value": "\"apple_auth_url\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/ClientInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3359,
+      "offset": 3542,
       "length": 14,
       "value": "\"redirect_uri\""
     },

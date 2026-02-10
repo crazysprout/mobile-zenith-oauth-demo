@@ -168,6 +168,7 @@ import _SwiftConcurrencyShims
   @objc public func continueSignIn(success: @escaping (Zenith.ZenithUserInfo) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
   @objc public func getProfile(success: @escaping (Zenith.ZenithUserInfo) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
   @objc public func signout(success: @escaping () -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func deleteAccount(viewController: UIKit.UIViewController, failure: @escaping (any Swift.Error) -> Swift.Void)
   @objc public func fetchProducts(success: @escaping ([Zenith.ZenithProduct]) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
   @objc public func purchaseProduct(productId: Swift.String, success: @escaping (Zenith.ZenithPurchaseInfo) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
   @objc public func purchaseHistory(success: @escaping ([Zenith.ZenithTransaction]) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
