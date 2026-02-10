@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     
     @IBAction func onIapTapped(_ sender: Any) {
         let iapVc = IapViewController()
-        iapVc.modalPresentationStyle = .pageSheet
+        iapVc.modalPresentationStyle = .fullScreen
         self.present(iapVc, animated: true, completion: nil)
     }
         

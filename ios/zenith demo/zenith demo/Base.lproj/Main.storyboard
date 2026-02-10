@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,21 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="fill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rootStack">
-                                <rect key="frame" x="20" y="326" width="353" height="200"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rootStack">
+                                <rect key="frame" x="20" y="359.66666666666669" width="353" height="133"/>
                                 <subviews>
-                                    <!-- Sign In Container -->
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="fill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="signInContainer">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="100"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="signInContainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="133"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Zenith Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="titleLabel">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="24"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="32.333333333333336"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oauthButton">
-                                                <rect key="frame" x="0.0" y="34" width="353" height="35"/>
+                                                <rect key="frame" x="0.0" y="42.333333333333314" width="353" height="40.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="OAuth Sign in">
                                                     <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
@@ -40,7 +39,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guestButton">
-                                                <rect key="frame" x="0.0" y="79" width="353" height="35"/>
+                                                <rect key="frame" x="0.0" y="92.666666666666629" width="353" height="40.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="Guest Sign in">
                                                     <color key="baseForegroundColor" systemColor="systemBlueColor"/>
@@ -51,10 +50,8 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-
-                                    <!-- Profile Container -->
-                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="fill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="profileContainer">
-                                        <rect key="frame" x="0.0" y="110" width="353" height="0.0"/>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="profileContainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="profileTitle">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="0.0"/>
@@ -63,25 +60,25 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User is logged in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="profileStatus">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="10" width="353" height="0.0"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID: -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbl-use-rid">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="20" width="353" height="0.0"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbl-use-nam">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="30" width="353" height="0.0"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="getProfileButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="35"/>
+                                                <rect key="frame" x="0.0" y="40" width="353" height="0.0"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="Get Profile">
                                                     <color key="baseForegroundColor" systemColor="systemBlueColor"/>
@@ -91,7 +88,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="signOutButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="50" width="353" height="0.0"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Sign out">
                                                     <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
@@ -101,7 +98,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iapButton-SB">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="35"/>
+                                                <rect key="frame" x="0.0" y="60" width="353" height="0.0"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="In-App Purchase">
                                                     <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
@@ -112,10 +109,8 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-
-                                    <!-- Continue Container -->
-                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="fill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="continueContainer">
-                                        <rect key="frame" x="0.0" y="120" width="353" height="0.0"/>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="continueContainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="10"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="continueTitle">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="0.0"/>
@@ -124,7 +119,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="continueButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="10" width="353" height="0.0"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Continue sign in">
                                                     <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
@@ -133,10 +128,8 @@
                                                     <action selector="onContinueTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="act-continue"/>
                                                 </connections>
                                             </button>
-
                                         </subviews>
                                     </stackView>
-
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -149,12 +142,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="signInContainer" destination="signInContainer" id="outlet-signin"/>
-                        <outlet property="profileContainer" destination="profileContainer" id="outlet-profile"/>
+                        <outlet property="continueContainer" destination="continueContainer" id="outlet-continue"/>
                         <outlet property="idLabel" destination="lbl-use-rid" id="con-use-rid"/>
                         <outlet property="nameLabel" destination="lbl-use-nam" id="con-use-nam"/>
-                        <outlet property="continueContainer" destination="continueContainer" id="outlet-continue"/>
-                        <segue destination="profile-vc" kind="presentation" identifier="showProfileDetail" id="seg-show-prof"/>
+                        <outlet property="profileContainer" destination="profileContainer" id="outlet-profile"/>
+                        <outlet property="signInContainer" destination="signInContainer" id="outlet-signin"/>
+                        <segue destination="profile-vc" kind="presentation" identifier="showProfileDetail" modalPresentationStyle="fullScreen" id="seg-show-prof"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -170,24 +163,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading details..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="detailsLabel">
-                                <rect key="frame" x="20" y="416" width="353" height="20.333333333333314"/>
+                                <rect key="frame" x="20" y="414" width="353" height="24.333333333333314"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="closeButton">
-                                <rect key="frame" x="20" y="59" width="80" height="35"/>
+                                <rect key="frame" x="20" y="59" width="44" height="40.333333333333343"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="close-width"/>
+                                    <constraint firstAttribute="width" constant="44" id="close-width"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Close"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system" title=""/>
                                 <connections>
                                     <action selector="onCloseTapped:" destination="profile-vc" eventType="touchUpInside" id="act-close"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deleteButton">
-                                <rect key="frame" x="121" y="763" width="150" height="35"/>
+                                <rect key="frame" x="126.33333333333333" y="757.66666666666663" width="140.66666666666669" height="40.333333333333371"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Delete Account"/>
@@ -199,13 +192,13 @@
                         <viewLayoutGuide key="safeArea" id="profile-safe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="closeButton" firstAttribute="leading" secondItem="profile-safe" secondAttribute="leading" constant="20" id="close-lead"/>
+                            <constraint firstItem="closeButton" firstAttribute="top" secondItem="profile-safe" secondAttribute="top" id="close-top"/>
+                            <constraint firstItem="profile-safe" firstAttribute="bottom" secondItem="deleteButton" secondAttribute="bottom" constant="20" id="del-bottom"/>
+                            <constraint firstItem="deleteButton" firstAttribute="centerX" secondItem="profile-view" secondAttribute="centerX" id="del-center"/>
+                            <constraint firstItem="detailsLabel" firstAttribute="centerY" secondItem="profile-view" secondAttribute="centerY" id="det-center"/>
                             <constraint firstItem="detailsLabel" firstAttribute="leading" secondItem="profile-safe" secondAttribute="leading" constant="20" id="det-lead"/>
                             <constraint firstItem="profile-safe" firstAttribute="trailing" secondItem="detailsLabel" secondAttribute="trailing" constant="20" id="det-trail"/>
-                            <constraint firstItem="detailsLabel" firstAttribute="centerY" secondItem="profile-view" secondAttribute="centerY" id="det-center"/>
-                            <constraint firstItem="closeButton" firstAttribute="top" secondItem="profile-safe" secondAttribute="top" id="close-top"/>
-                            <constraint firstItem="closeButton" firstAttribute="leading" secondItem="profile-safe" secondAttribute="leading" constant="20" id="close-lead"/>
-                            <constraint firstItem="deleteButton" firstAttribute="centerX" secondItem="profile-view" secondAttribute="centerX" id="del-center"/>
-                            <constraint firstItem="profile-safe" firstAttribute="bottom" secondItem="deleteButton" secondAttribute="bottom" constant="20" id="del-bottom"/>
                         </constraints>
                     </view>
                     <connections>
@@ -218,14 +211,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
