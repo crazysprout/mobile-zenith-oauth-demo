@@ -186,6 +186,15 @@
                                     <action selector="onCloseTapped:" destination="profile-vc" eventType="touchUpInside" id="act-close"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deleteButton">
+                                <rect key="frame" x="121" y="763" width="150" height="35"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete Account"/>
+                                <connections>
+                                    <action selector="onDeleteAccountTapped:" destination="profile-vc" eventType="touchUpInside" id="act-delete"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="profile-safe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -195,6 +204,8 @@
                             <constraint firstItem="detailsLabel" firstAttribute="centerY" secondItem="profile-view" secondAttribute="centerY" id="det-center"/>
                             <constraint firstItem="closeButton" firstAttribute="top" secondItem="profile-safe" secondAttribute="top" id="close-top"/>
                             <constraint firstItem="closeButton" firstAttribute="leading" secondItem="profile-safe" secondAttribute="leading" constant="20" id="close-lead"/>
+                            <constraint firstItem="deleteButton" firstAttribute="centerX" secondItem="profile-view" secondAttribute="centerX" id="del-center"/>
+                            <constraint firstItem="profile-safe" firstAttribute="bottom" secondItem="deleteButton" secondAttribute="bottom" constant="20" id="del-bottom"/>
                         </constraints>
                     </view>
                     <connections>
@@ -212,6 +223,9 @@
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
