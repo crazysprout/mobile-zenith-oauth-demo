@@ -54,9 +54,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onIapTapped(_ sender: Any) {
-        let iapVc = IapViewController()
-        iapVc.modalPresentationStyle = .fullScreen
-        self.present(iapVc, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "showIAP", sender: nil)
     }
         
     private func updateProfileInfo(user: ZenithUserInfo) {

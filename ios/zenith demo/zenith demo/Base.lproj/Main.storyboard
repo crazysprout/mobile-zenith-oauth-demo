@@ -148,6 +148,7 @@
                         <outlet property="profileContainer" destination="profileContainer" id="outlet-profile"/>
                         <outlet property="signInContainer" destination="signInContainer" id="outlet-signin"/>
                         <segue destination="profile-vc" kind="presentation" identifier="showProfileDetail" modalPresentationStyle="fullScreen" id="seg-show-prof"/>
+                        <segue destination="iap-vc" kind="presentation" identifier="showIAP" modalPresentationStyle="fullScreen" id="seg-show-iap"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -205,6 +206,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="profile-first-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="900" y="-2"/>
+        </scene>
+        <!--IAP View Controller-->
+        <scene sceneID="iap-vc-scene">
+            <objects>
+                <viewController id="iap-vc" customClass="IapViewController" customModule="zenith_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iap-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iap-back-button">
+                                <rect key="frame" x="20" y="59" width="82.333333333333329" height="40.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="Back" imagePadding="5"/>
+                                <connections>
+                                    <action selector="onCloseTapped:" destination="iap-vc" eventType="touchUpInside" id="act-iap-close"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status: Ready" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iap-status-label">
+                                <rect key="frame" x="20" y="107.33333333333334" width="353" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iap-table-view">
+                                <rect key="frame" x="0.0" y="135.66666666666669" width="393" height="682.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iap-safe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iap-back-button" firstAttribute="leading" secondItem="iap-safe" secondAttribute="leading" constant="20" id="iap-back-lead"/>
+                            <constraint firstItem="iap-back-button" firstAttribute="top" secondItem="iap-safe" secondAttribute="top" id="iap-back-top"/>
+                            <constraint firstItem="iap-status-label" firstAttribute="top" secondItem="iap-back-button" secondAttribute="bottom" constant="8" id="iap-stat-top"/>
+                            <constraint firstItem="iap-status-label" firstAttribute="leading" secondItem="iap-safe" secondAttribute="leading" constant="20" id="iap-stat-lead"/>
+                            <constraint firstItem="iap-safe" firstAttribute="trailing" secondItem="iap-status-label" secondAttribute="trailing" constant="20" id="iap-stat-trail"/>
+                            <constraint firstItem="iap-table-view" firstAttribute="top" secondItem="iap-status-label" secondAttribute="bottom" constant="8" id="iap-tab-top"/>
+                            <constraint firstItem="iap-safe" firstAttribute="bottom" secondItem="iap-table-view" secondAttribute="bottom" id="iap-tab-bot"/>
+                            <constraint firstItem="iap-table-view" firstAttribute="leading" secondItem="iap-safe" secondAttribute="leading" id="iap-tab-lead"/>
+                            <constraint firstItem="iap-safe" firstAttribute="trailing" secondItem="iap-table-view" secondAttribute="trailing" id="iap-tab-trail"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="iap-status-label" id="con-iap-stat"/>
+                        <outlet property="tableView" destination="iap-table-view" id="con-iap-tab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iap-first-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700" y="-2"/>
         </scene>
     </scenes>
     <resources>

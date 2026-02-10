@@ -9,63 +9,23 @@ import Zenith
 
 class IapViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    
     private var products: [ZenithProduct] = []
     
-    private lazy var statusLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Status: Ready"
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
-    private lazy var tableView: UITableView = {
-        let tv = UITableView()
-        tv.dataSource = self
-        tv.delegate = self
-        tv.register(UITableViewCell.self, forCellReuseIdentifier: "ProductCell")
-        tv.translatesAutoresizingMaskIntoConstraints = false
-        return tv
-    }()
-    
-    private lazy var closeButton: UIButton = {
-        var config = UIButton.Configuration.plain()
-        config.title = "Back"
-        config.image = UIImage(systemName: "chevron.backward")
-        config.imagePadding = 5
-        
-        let btn = UIButton(configuration: config)
-        btn.addTarget(self, action: #selector(onCloseTapped), for: .touchUpInside)
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        return btn
-    }()
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
-        setupUI()
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ProductCell")
+        
         fetchProducts()
     }
     
-    private func setupUI() {
-        view.addSubview(statusLabel)
-        view.addSubview(tableView)
-        view.addSubview(closeButton)
-        
-        NSLayoutConstraint.activate([
-            closeButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            closeButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            
-            statusLabel.topAnchor.constraint(equalTo: closeButton.bottomAnchor, constant: 10),
-            statusLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            statusLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            
-            tableView.topAnchor.constraint(equalTo: statusLabel.bottomAnchor, constant: 20),
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
-        ])
+    @IBAction func onCloseTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     private func fetchProducts() {
@@ -97,10 +57,6 @@ class IapViewController: UIViewController, UITableViewDataSource, UITableViewDel
                 print("Purchase Error: \(error)")
             }
         }
-    }
-    
-    @objc private func onCloseTapped() {
-        dismiss(animated: true, completion: nil)
     }
     
     // MARK: - UITableViewDataSource
