@@ -2,6 +2,7 @@ package com.aztek.zenith.demo
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -14,7 +15,7 @@ class ProfileActivity : ComponentActivity() {
         setContentView(R.layout.activity_profile)
 
         val tvDetails = findViewById<TextView>(R.id.tv_profile_details)
-        val btnClose = findViewById<Button>(R.id.btn_close)
+        val btnClose = findViewById<ImageButton>(R.id.btn_close)
         val btnDeleteAccount = findViewById<Button>(R.id.btn_delete_account)
 
         // Retrieve data passed from MainActivity
