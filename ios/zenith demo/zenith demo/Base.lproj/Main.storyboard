@@ -223,6 +223,14 @@
                                     <action selector="onCloseTapped:" destination="iap-vc" eventType="touchUpInside" id="act-iap-close"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iap-history-button">
+                                <rect key="frame" x="290" y="59" width="83" height="40.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="History"/>
+                                <connections>
+                                    <action selector="onHistoryTapped:" destination="iap-vc" eventType="touchUpInside" id="act-iap-history"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status: Ready" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iap-status-label">
                                 <rect key="frame" x="20" y="107.33333333333334" width="353" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -239,6 +247,8 @@
                         <constraints>
                             <constraint firstItem="iap-back-button" firstAttribute="leading" secondItem="iap-safe" secondAttribute="leading" constant="20" id="iap-back-lead"/>
                             <constraint firstItem="iap-back-button" firstAttribute="top" secondItem="iap-safe" secondAttribute="top" id="iap-back-top"/>
+                            <constraint firstItem="iap-safe" firstAttribute="trailing" secondItem="iap-history-button" secondAttribute="trailing" constant="20" id="iap-hist-trail"/>
+                            <constraint firstItem="iap-history-button" firstAttribute="top" secondItem="iap-safe" secondAttribute="top" id="iap-hist-top"/>
                             <constraint firstItem="iap-status-label" firstAttribute="top" secondItem="iap-back-button" secondAttribute="bottom" constant="8" id="iap-stat-top"/>
                             <constraint firstItem="iap-status-label" firstAttribute="leading" secondItem="iap-safe" secondAttribute="leading" constant="20" id="iap-stat-lead"/>
                             <constraint firstItem="iap-safe" firstAttribute="trailing" secondItem="iap-status-label" secondAttribute="trailing" constant="20" id="iap-stat-trail"/>
@@ -249,6 +259,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="historyButton" destination="iap-history-button" id="con-iap-hist"/>
                         <outlet property="statusLabel" destination="iap-status-label" id="con-iap-stat"/>
                         <outlet property="tableView" destination="iap-table-view" id="con-iap-tab"/>
                     </connections>

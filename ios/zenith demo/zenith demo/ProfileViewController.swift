@@ -21,7 +21,7 @@ class ProfileViewController: UIViewController {
     @IBAction func onDeleteAccountTapped(_ sender: Any) {
         ZenithApp.shared.deleteAccount(viewController: self) { [weak self] error in
             guard let self = self else { return }
-            let alert = UIAlertController(title: "Error", message: "Failed to delete account: \(error.localizedDescription)", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "Failed to delete account: \(error?.localizedDescription)", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             self.present(alert, animated: true)
         }

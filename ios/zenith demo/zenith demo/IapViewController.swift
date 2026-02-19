@@ -13,7 +13,12 @@ class IapViewController: UIViewController, UITableViewDataSource, UITableViewDel
     @IBOutlet weak var tableView: UITableView!
     
     private var products: [ZenithProduct] = []
+    private var transactions: [ZenithTransaction] = []
+    private var isShowingHistory = false
+
     
+    @IBOutlet weak var historyButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +27,37 @@ class IapViewController: UIViewController, UITableViewDataSource, UITableViewDel
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ProductCell")
         
         fetchProducts()
+    }
+    
+    @IBAction func onHistoryTapped(_ sender: Any) {
+        toggleHistory()
+    }
+    
+    private func toggleHistory() {
+        isShowingHistory = !isShowingHistory
+        if isShowingHistory {
+            historyButton.setTitle("Products", for: .normal)
+            fetchHistory()
+        } else {
+            historyButton.setTitle("History", for: .normal)
+            fetchProducts()
+        }
+    }
+    
+    private func fetchHistory() {
+        statusLabel.text = "Status: Fetching history..."
+        ZenithApp.shared.purchaseHistory { [weak self] transactions in
+            DispatchQueue.main.async {
+                self?.statusLabel.text = "Status: History fetched (\(transactions.count))"
+                self?.transactions = transactions
+                self?.tableView.reloadData()
+            }
+        } failure: { [weak self] error in
+            DispatchQueue.main.async {
+                self?.statusLabel.text = "Status: History Fetch Failed - \(error.localizedDescription)"
+                print("History Fetch Error: \(error)")
+            }
+        }
     }
     
     @IBAction func onCloseTapped(_ sender: Any) {
@@ -51,6 +87,10 @@ class IapViewController: UIViewController, UITableViewDataSource, UITableViewDel
                 self?.statusLabel.text = "Status: Purchased \(purchaseInfo.productId)!"
                 print("Purchase Success: \(purchaseInfo)")
             }
+        } pending: { [weak self] in
+            DispatchQueue.main.async {
+                self?.statusLabel.text = "Status: Purchase Pending..."
+            }
         } failure: { [weak self] error in
             DispatchQueue.main.async {
                 self?.statusLabel.text = "Status: Purchase Failed - \(error.localizedDescription)"
@@ -62,21 +102,29 @@ class IapViewController: UIViewController, UITableViewDataSource, UITableViewDel
     // MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return products.count
+        return isShowingHistory ? transactions.count : products.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath)
-        let product = products[indexPath.row]
         var content = cell.defaultContentConfiguration()
-        content.text = product.title
         
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.locale = product.priceLocale
-        let priceString = formatter.string(from: product.price as NSDecimalNumber) ?? "\(product.price)"
+        if isShowingHistory {
+            let transaction = transactions[indexPath.row]
+            content.text = transaction.productId
+            content.secondaryText = "Transaction" // Modify based on ZenithTransaction properties
+        } else {
+            let product = products[indexPath.row]
+            content.text = product.title
+            
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .currency
+            formatter.locale = product.priceLocale
+            let priceString = formatter.string(from: product.price as NSDecimalNumber) ?? "\(product.price)"
+            
+            content.secondaryText = "\(priceString) (\(product.id))"
+        }
         
-        content.secondaryText = "\(priceString) (\(product.id))"
         cell.contentConfiguration = content
         return cell
     }
@@ -85,7 +133,9 @@ class IapViewController: UIViewController, UITableViewDataSource, UITableViewDel
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let product = products[indexPath.row]
-        purchaseProduct(product)
+        if !isShowingHistory {
+            let product = products[indexPath.row]
+            purchaseProduct(product)
+        }
     }
 }

@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
 
     private func checkPreviousSignIn() {
-        if let type = ZenithApp.shared.lastSignInType() {
+        if let type = ZenithApp.shared.lastSignInType {
             print("\(type.toString()) is last sign in")
             showContinueState()
         } else {
