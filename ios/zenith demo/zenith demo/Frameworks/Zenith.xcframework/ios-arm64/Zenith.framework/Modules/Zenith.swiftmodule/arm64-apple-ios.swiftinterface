@@ -5,6 +5,7 @@
 import AuthenticationServices
 import CommonCrypto
 import Foundation
+import Network
 import ObjectiveC
 import Security
 import StoreKit
@@ -22,7 +23,7 @@ import _SwiftConcurrencyShims
   @objc final public let currencySymbol: Swift.String
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithPurchaseInfo : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers @objcMembers public class ZenithPurchaseInfo : ObjectiveC.NSObject, @unchecked Swift.Sendable {
   @objc public var transactionId: Swift.String
   @objc public var originalTransactionId: Swift.String
   @objc public var productId: Swift.String
@@ -157,22 +158,29 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ZenithApp : ObjectiveC.NSObject {
   @objc public static let shared: Zenith.ZenithApp
+  @objc public func setPurchaseDelegate(_ delegate: any Zenith.ZenithPurchaseDelegate)
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public func setup(apiKey: Swift.String, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
   #endif
+  @objc(lastSignInType) public func lastSignInTypeRaw() -> Swift.Int
   #if compiler(>=5.3) && $NonescapableTypes
-  public func lastSignInType() -> Zenith.ZenithSignInType?
+  public var lastSignInType: Zenith.ZenithSignInType? {
+    get
+  }
   #endif
-  @objc public func lastSignInTypeValue() -> Swift.Int
   @objc public func signIn(type: Zenith.ZenithSignInType, viewController: UIKit.UIViewController, success: @escaping (Zenith.ZenithUserInfo) -> Swift.Void, cancel: @escaping () -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
+  @objc public func handleOpenUrl(_ url: Foundation.URL) -> Swift.Bool
   @objc public func continueSignIn(success: @escaping (Zenith.ZenithUserInfo) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
   @objc public func getProfile(success: @escaping (Zenith.ZenithUserInfo) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
   @objc public func signout(success: @escaping () -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
-  @objc public func deleteAccount(viewController: UIKit.UIViewController, failure: @escaping (any Swift.Error) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func deleteAccount(viewController: UIKit.UIViewController, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
   @objc public func fetchProducts(success: @escaping ([Zenith.ZenithProduct]) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
-  @objc public func purchaseProduct(productId: Swift.String, success: @escaping (Zenith.ZenithPurchaseInfo) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func purchaseProduct(productId: Swift.String, metadata: [Swift.String : Any]? = nil, success: @escaping (Zenith.ZenithPurchaseInfo) -> Swift.Void, pending: @escaping () -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
+  #endif
   @objc public func purchaseHistory(success: @escaping ([Zenith.ZenithTransaction]) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
-  @objc public func setPurchaseDelegate(_ delegate: any Zenith.ZenithPurchaseDelegate)
   @objc deinit
 }
 @objc public protocol ZenithPurchaseDelegate {

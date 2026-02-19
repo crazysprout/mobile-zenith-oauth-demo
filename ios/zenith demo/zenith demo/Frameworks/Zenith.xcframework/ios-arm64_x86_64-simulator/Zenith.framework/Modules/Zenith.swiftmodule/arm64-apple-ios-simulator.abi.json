@@ -1677,6 +1677,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -1737,6 +1744,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -9450,6 +9464,13 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Zenith"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -9549,6 +9570,20 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Zenith"
+      },
+      {
+        "kind": "Import",
+        "name": "StoreKit",
+        "printedName": "StoreKit",
+        "declKind": "Import",
+        "moduleName": "Zenith"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -9561,6 +9596,23 @@
         "kind": "Import",
         "name": "AuthenticationServices",
         "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "Zenith"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Zenith",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
         "declKind": "Import",
         "moduleName": "Zenith"
       },
@@ -9607,8 +9659,8 @@
       },
       {
         "kind": "Import",
-        "name": "StoreKit",
-        "printedName": "StoreKit",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
         "declKind": "Import",
         "moduleName": "Zenith"
       },
@@ -9670,6 +9722,34 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "setPurchaseDelegate",
+            "printedName": "setPurchaseDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ZenithPurchaseDelegate",
+                "printedName": "any Zenith.ZenithPurchaseDelegate",
+                "usr": "c:@M@Zenith@objc(pl)ZenithPurchaseDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)setPurchaseDelegate:",
+            "mangledName": "$s6Zenith0A3AppC19setPurchaseDelegateyyAA0adE0_pF",
+            "moduleName": "Zenith",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -9737,8 +9817,32 @@
           },
           {
             "kind": "Function",
+            "name": "lastSignInTypeRaw",
+            "printedName": "lastSignInTypeRaw()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)lastSignInType",
+            "mangledName": "$s6Zenith0A3AppC17lastSignInTypeRawSiyF",
+            "moduleName": "Zenith",
+            "objc_name": "lastSignInType",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
             "name": "lastSignInType",
-            "printedName": "lastSignInType()",
+            "printedName": "lastSignInType",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9755,38 +9859,42 @@
                 "usr": "s:Sq"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:6Zenith0A3AppC14lastSignInTypeAA0adeF0OSgyF",
-            "mangledName": "$s6Zenith0A3AppC14lastSignInTypeAA0adeF0OSgyF",
+            "declKind": "Var",
+            "usr": "s:6Zenith0A3AppC14lastSignInTypeAA0adeF0OSgvp",
+            "mangledName": "$s6Zenith0A3AppC14lastSignInTypeAA0adeF0OSgvp",
             "moduleName": "Zenith",
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
             ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "lastSignInTypeValue",
-            "printedName": "lastSignInTypeValue()",
-            "children": [
+            "accessors": [
               {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Zenith.ZenithSignInType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZenithSignInType",
+                        "printedName": "Zenith.ZenithSignInType",
+                        "usr": "c:@M@Zenith@E@ZenithSignInType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Zenith0A3AppC14lastSignInTypeAA0adeF0OSgvg",
+                "mangledName": "$s6Zenith0A3AppC14lastSignInTypeAA0adeF0OSgvg",
+                "moduleName": "Zenith",
+                "accessorKind": "get"
               }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)lastSignInTypeValue",
-            "mangledName": "$s6Zenith0A3AppC19lastSignInTypeValueSiyF",
-            "moduleName": "Zenith",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
+            ]
           },
           {
             "kind": "Function",
@@ -9869,6 +9977,35 @@
             "mangledName": "$s6Zenith0A3AppC6signIn4type14viewController7success6cancel7failureyAA0a4SignD4TypeO_So06UIViewG0CyAA0A8UserInfoCcyycys5Error_pctF",
             "moduleName": "Zenith",
             "objc_name": "signInType:viewController:success:cancel:failure:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleOpenUrl",
+            "printedName": "handleOpenUrl(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)handleOpenUrl:",
+            "mangledName": "$s6Zenith0A3AppC13handleOpenUrlySb10Foundation3URLVF",
+            "moduleName": "Zenith",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -10055,7 +10192,7 @@
           {
             "kind": "Function",
             "name": "deleteAccount",
-            "printedName": "deleteAccount(viewController:failure:)",
+            "printedName": "deleteAccount(viewController:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10071,7 +10208,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(any Swift.Error) -> ()",
+                "printedName": "((any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -10080,18 +10217,26 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
+                    "name": "Optional",
+                    "printedName": "(any Swift.Error)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)deleteAccountWithViewController:failure:",
-            "mangledName": "$s6Zenith0A3AppC13deleteAccount14viewController7failureySo06UIViewF0C_ys5Error_pctF",
+            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)deleteAccountWithViewController:completion:",
+            "mangledName": "$s6Zenith0A3AppC13deleteAccount14viewController10completionySo06UIViewF0C_ys5Error_pSgctF",
             "moduleName": "Zenith",
-            "objc_name": "deleteAccountWithViewController:failure:",
+            "objc_name": "deleteAccountWithViewController:completion:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -10169,7 +10314,7 @@
           {
             "kind": "Function",
             "name": "purchaseProduct",
-            "printedName": "purchaseProduct(productId:success:failure:)",
+            "printedName": "purchaseProduct(productId:metadata:success:pending:failure:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10181,6 +10326,34 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -10197,6 +10370,23 @@
                     "name": "ZenithPurchaseInfo",
                     "printedName": "Zenith.ZenithPurchaseInfo",
                     "usr": "c:@M@Zenith@objc(cs)ZenithPurchaseInfo"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
                   }
                 ]
               },
@@ -10220,10 +10410,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)purchaseProductWithProductId:success:failure:",
-            "mangledName": "$s6Zenith0A3AppC15purchaseProduct9productId7success7failureySS_yAA0A12PurchaseInfoCcys5Error_pctF",
+            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)purchaseProductWithProductId:metadata:success:pending:failure:",
+            "mangledName": "$s6Zenith0A3AppC15purchaseProduct9productId8metadata7success7pending7failureySS_SDySSypGSgyAA0A12PurchaseInfoCcyycys5Error_pctF",
             "moduleName": "Zenith",
-            "objc_name": "purchaseProductWithProductId:success:failure:",
+            "objc_name": "purchaseProductWithProductId:metadata:success:pending:failure:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -10297,34 +10487,6 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setPurchaseDelegate",
-            "printedName": "setPurchaseDelegate(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ZenithPurchaseDelegate",
-                "printedName": "any Zenith.ZenithPurchaseDelegate",
-                "usr": "c:@M@Zenith@objc(pl)ZenithPurchaseDelegate"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Zenith@objc(cs)ZenithApp(im)setPurchaseDelegate:",
-            "mangledName": "$s6Zenith0A3AppC19setPurchaseDelegateyyAA0adE0_pF",
-            "moduleName": "Zenith",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -10333,8 +10495,7 @@
         "moduleName": "Zenith",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
@@ -11267,147 +11428,147 @@
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
       "kind": "StringLiteral",
-      "offset": 4502,
+      "offset": 4534,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
       "kind": "StringLiteral",
-      "offset": 4651,
+      "offset": 4683,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
       "kind": "StringLiteral",
-      "offset": 4743,
+      "offset": 4775,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
       "kind": "StringLiteral",
-      "offset": 4826,
+      "offset": 4858,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
       "kind": "StringLiteral",
-      "offset": 4911,
+      "offset": 4943,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
       "kind": "StringLiteral",
-      "offset": 10056,
+      "offset": 10088,
       "length": 16,
       "value": "\"transaction_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
       "kind": "StringLiteral",
-      "offset": 10098,
+      "offset": 10130,
       "length": 12,
       "value": "\"product_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
       "kind": "StringLiteral",
-      "offset": 10180,
+      "offset": 10212,
       "length": 15,
       "value": "\"purchase_date\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/InAppPurchase.swift",
       "kind": "StringLiteral",
-      "offset": 10224,
+      "offset": 10256,
       "length": 16,
       "value": "\"game_bundle_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 2387,
+      "offset": 2409,
       "length": 11,
       "value": "\"player_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 2428,
+      "offset": 2450,
       "length": 16,
       "value": "\"transaction_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 2482,
+      "offset": 2504,
       "length": 25,
       "value": "\"original_transaction_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 2533,
+      "offset": 2555,
       "length": 12,
       "value": "\"product_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 2615,
+      "offset": 2637,
       "length": 15,
       "value": "\"purchase_date\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 2657,
+      "offset": 2679,
       "length": 13,
       "value": "\"signed_date\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 2705,
+      "offset": 2727,
       "length": 21,
       "value": "\"device_verification\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 2766,
+      "offset": 2788,
       "length": 27,
       "value": "\"device_verification_nonce\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 2820,
+      "offset": 2861,
       "length": 13,
       "value": "\"identify_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 4331,
+      "offset": 4372,
       "length": 13,
       "value": "\"identify_id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 4373,
+      "offset": 4414,
       "length": 15,
       "value": "\"refresh_token\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Data\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 4435,
+      "offset": 4476,
       "length": 11,
       "value": "\"client_id\""
     },
@@ -11512,21 +11673,21 @@
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/ServiceManager\/InAppPurchaseManager.swift",
       "kind": "Array",
-      "offset": 246,
+      "offset": 313,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/ServiceManager\/InAppPurchaseManager.swift",
       "kind": "Array",
-      "offset": 301,
+      "offset": 368,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/ServiceManager\/InAppPurchaseManager.swift",
       "kind": "StringLiteral",
-      "offset": 359,
+      "offset": 426,
       "length": 27,
       "value": "\"com.zenith.iap.sync.queue\""
     },
@@ -11559,6 +11720,20 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Utils\/NetworkMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 282,
+      "length": 16,
+      "value": "\"NetworkMonitor\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Utils\/NetworkMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 329,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 313,
@@ -11568,189 +11743,224 @@
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2723,
+      "offset": 2816,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2783,
+      "offset": 2876,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2883,
+      "offset": 2976,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2946,
+      "offset": 3039,
       "length": 8,
       "value": "\"Bearer\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3019,
+      "offset": 3112,
       "length": 11,
       "value": "\"X-API-KEY\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3072,
+      "offset": 3165,
       "length": 13,
       "value": "\"x-device-id\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3127,
+      "offset": 3220,
       "length": 12,
       "value": "\"x-platform\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3186,
+      "offset": 3279,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3260,
+      "offset": 3353,
       "length": 14,
       "value": "\"access_token\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3314,
+      "offset": 3407,
       "length": 15,
       "value": "\"refresh_token\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3366,
+      "offset": 3459,
       "length": 12,
       "value": "\"expires_in\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3453,
+      "offset": 3546,
       "length": 13,
       "value": "\"Invalid URL\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3505,
+      "offset": 3598,
       "length": 18,
       "value": "\"No data received\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3571,
+      "offset": 3664,
       "length": 18,
       "value": "\"Invalid response\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3630,
+      "offset": 3723,
       "length": 11,
       "value": "\"API Error\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3689,
+      "offset": 3782,
       "length": 20,
       "value": "\"Product not found.\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3757,
+      "offset": 3850,
       "length": 19,
       "value": "\"Purchase pending.\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3824,
+      "offset": 3917,
       "length": 26,
       "value": "\"Unknown purchase result.\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3900,
+      "offset": 3993,
       "length": 14,
       "value": "\"Unauthorized\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3959,
+      "offset": 4052,
       "length": 15,
       "value": "\"Missing Token\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4019,
+      "offset": 4112,
       "length": 15,
       "value": "\"Logout Failed\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4106,
+      "offset": 4171,
+      "length": 16,
+      "value": "\"com.zenith.sdk\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4238,
+      "length": 62,
+      "value": "\"User ID or Publisher ID is missing. Cannot bind transaction.\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4354,
+      "length": 39,
+      "value": "\"Failed to generate App Account Token.\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4448,
+      "length": 24,
+      "value": "\"ZenithPaymentCancelled\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4528,
+      "length": 29,
+      "value": "\"User cancelled the purchase\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4600,
+      "length": 24,
+      "value": "\"No Internet Connection\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4696,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4143,
+      "offset": 4733,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Zenith.swift",
       "kind": "StringLiteral",
-      "offset": 454,
+      "offset": 333,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Zenith.swift",
       "kind": "StringLiteral",
-      "offset": 493,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Zenith.swift",
-      "kind": "StringLiteral",
-      "offset": 578,
+      "offset": 418,
       "length": 9,
       "value": "\"webview\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Zenith.swift",
       "kind": "StringLiteral",
-      "offset": 628,
+      "offset": 468,
       "length": 4,
       "value": "\"th\""
     }
