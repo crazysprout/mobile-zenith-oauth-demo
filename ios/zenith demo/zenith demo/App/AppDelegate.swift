@@ -11,7 +11,13 @@ import Zenith
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-         ZenithApp.shared.setup(apiKey: "YOUR_API_KEY")
+        ZenithApp.shared.setup(apiKey: "API_KEY_HERE") { error in
+            if let error = error {
+                print("ZenithApp setup failed with error: \(error)")
+            } else {
+                print("ZenithApp setup completed successfully.")
+            }
+        }
         return true
     }
 

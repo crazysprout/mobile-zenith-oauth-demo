@@ -46,16 +46,22 @@ class IapViewController: UIViewController, UITableViewDataSource, UITableViewDel
     
     private func fetchHistory() {
         statusLabel.text = "Status: Fetching history..."
+        showLoading(message: "Loading History...")
+        
         ZenithApp.shared.purchaseHistory { [weak self] transactions in
             DispatchQueue.main.async {
-                self?.statusLabel.text = "Status: History fetched (\(transactions.count))"
-                self?.transactions = transactions
-                self?.tableView.reloadData()
+                self?.hideLoading {
+                    self?.statusLabel.text = "Status: History fetched (\(transactions.count))"
+                    self?.transactions = transactions
+                    self?.tableView.reloadData()
+                }
             }
         } failure: { [weak self] error in
             DispatchQueue.main.async {
-                self?.statusLabel.text = "Status: History Fetch Failed - \(error.localizedDescription)"
-                print("History Fetch Error: \(error)")
+                self?.hideLoading {
+                    self?.statusLabel.text = "Status: History Fetch Failed - \(error.localizedDescription)"
+                    print("History Fetch Error: \(error)")
+                }
             }
         }
     }
@@ -66,26 +72,36 @@ class IapViewController: UIViewController, UITableViewDataSource, UITableViewDel
     
     private func fetchProducts() {
         statusLabel.text = "Status: Fetching products..."
+        showLoading(message: "Loading Products...")
+        
         ZenithApp.shared.fetchProducts { [weak self] products in
             DispatchQueue.main.async {
-                self?.statusLabel.text = "Status: Products fetched (\(products.count))"
-                self?.products = products
-                self?.tableView.reloadData()
+                self?.hideLoading {
+                    self?.statusLabel.text = "Status: Products fetched (\(products.count))"
+                    self?.products = products
+                    self?.tableView.reloadData()
+                }
             }
         } failure: { [weak self] error in
             DispatchQueue.main.async {
-                self?.statusLabel.text = "Status: Fetch Failed - \(error.localizedDescription)"
-                print("Fetch Error: \(error)")
+                self?.hideLoading {
+                    self?.statusLabel.text = "Status: Fetch Failed - \(error.localizedDescription)"
+                    print("Fetch Error: \(error)")
+                }
             }
         }
     }
     
     private func purchaseProduct(_ product: ZenithProduct) {
         statusLabel.text = "Status: Purchasing \(product.title)..."
+        showLoading(message: "Purchasing...")
+        
         ZenithApp.shared.purchaseProduct(productId: product.id) { [weak self] purchaseInfo in
             DispatchQueue.main.async {
-                self?.statusLabel.text = "Status: Purchased \(purchaseInfo.productId)!"
-                print("Purchase Success: \(purchaseInfo)")
+                self?.hideLoading {
+                    self?.statusLabel.text = "Status: Purchased \(purchaseInfo.productId)!"
+                    print("Purchase Success: \(purchaseInfo)")
+                }
             }
         } pending: { [weak self] in
             DispatchQueue.main.async {
@@ -93,8 +109,10 @@ class IapViewController: UIViewController, UITableViewDataSource, UITableViewDel
             }
         } failure: { [weak self] error in
             DispatchQueue.main.async {
-                self?.statusLabel.text = "Status: Purchase Failed - \(error.localizedDescription)"
-                print("Purchase Error: \(error)")
+                self?.hideLoading {
+                    self?.statusLabel.text = "Status: Purchase Failed - \(error.localizedDescription)"
+                    print("Purchase Error: \(error)")
+                }
             }
         }
     }

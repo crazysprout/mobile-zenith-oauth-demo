@@ -84,21 +84,39 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onContinueTapped(_ sender: Any) {
+        showLoading(message: "Continuing Sign In...")
+        
         ZenithApp.shared.continueSignIn { user in
-            self.showProfileState(user: user)
+            DispatchQueue.main.async {
+                self.hideLoading {
+                    self.showProfileState(user: user)
+                }
+            }
         } failure: { error in
-            print("Continue Sign In Failed: \(error)")
-            self.handleSignOut()
+            DispatchQueue.main.async {
+                self.hideLoading {
+                    print("Continue Sign In Failed: \(error)")
+                    self.handleSignOut()
+                }
+            }
         }
     }
     
     @IBAction func onGetProfileTapped(_ sender: Any) {
+        showLoading(message: "Loading Profile...")
+        
         ZenithApp.shared.getProfile { user in
             DispatchQueue.main.async {
-                self.performSegue(withIdentifier: "showProfileDetail", sender: user)
+                self.hideLoading {
+                    self.performSegue(withIdentifier: "showProfileDetail", sender: user)
+                }
             }
         } failure: { error in
-            print("Get Profile Failed: \(error)")
+            DispatchQueue.main.async {
+                self.hideLoading {
+                    print("Get Profile Failed: \(error)")
+                }
+            }
         }
     }
     
@@ -113,22 +131,46 @@ class ViewController: UIViewController {
     
     // MARK: - Helpers
     private func handleSignIn(type: ZenithSignInType, label: String) {
-        ZenithApp.shared.signIn(type: type, viewController: self) { user in
-            self.showProfileState(user: user)
-        } cancel: {
-            print("\(label) Sign In Cancelled")
-        } failure: { error in
-            print("\(label) Sign In Failed: \(error)")
+        showLoading(message: "Signing in...")
+        
+        ZenithApp.shared.signIn(type: type, viewController: self) { [weak self] user in
+            DispatchQueue.main.async {
+                self?.hideLoading {
+                    self?.showProfileState(user: user)
+                }
+            }
+        } cancel: { [weak self] in
+            DispatchQueue.main.async {
+                self?.hideLoading {
+                    print("\(label) Sign In Cancelled")
+                }
+            }
+        } failure: { [weak self] error in
+            DispatchQueue.main.async {
+                self?.hideLoading {
+                    print("\(label) Sign In Failed: \(error)")
+                }
+            }
         }
     }
     
     private func handleSignOut() {
-        ZenithApp.shared.signout {
-            self.showSignInState()
-        } failure: { error in
-            print("Sign Out Failed: \(error)")
-            // Force sign in state on failure as fallback
-            self.showSignInState()
+        showLoading(message: "Signing out...")
+        
+        ZenithApp.shared.signout { [weak self] in
+            DispatchQueue.main.async {
+                self?.hideLoading {
+                    self?.showSignInState()
+                }
+            }
+        } failure: { [weak self] error in
+            DispatchQueue.main.async {
+                self?.hideLoading {
+                    print("Sign Out Failed: \(error)")
+                    // Force sign in state on failure as fallback
+                    self?.showSignInState()
+                }
+            }
         }
     }
 }
