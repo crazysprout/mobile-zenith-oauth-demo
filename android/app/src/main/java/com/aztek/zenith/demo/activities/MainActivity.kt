@@ -1,4 +1,4 @@
-package com.aztek.zenith.demo
+package com.aztek.zenith.demo.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,6 +11,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 import com.aztek.zenith.*
 import com.aztek.zenith.data.*
+import com.aztek.zenith.demo.R
+import com.aztek.zenith.demo.utils.LoadingHelper
 
 class MainActivity : ComponentActivity() {
 
@@ -29,6 +31,7 @@ class MainActivity : ComponentActivity() {
 
         ZenithApp.setup(this, "YOUR_API_KEY") { error ->
             if (error == null) {
+                Log.d("MainActivity", "Zenith Setup Completed Successfully")
                 runOnUiThread { checkPreviousSignIn() }
             } else {
                 Log.e("MainActivity", "Zenith Setup Failed", error)
@@ -90,19 +93,30 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun handleContinue() {
+        LoadingHelper.showLoading(this, "Continuing Sign In...")
         ZenithApp.continueSignIn(
-                success = { user -> runOnUiThread { showProfileState(user) } },
+                success = { user ->
+                    runOnUiThread {
+                        LoadingHelper.hideLoading(this@MainActivity)
+                        showProfileState(user)
+                    }
+                },
                 failure = { error ->
-                    Log.e("MainActivity", "Continue Sign In Failed", error)
-                    handleSignOut()
+                    runOnUiThread {
+                        LoadingHelper.hideLoading(this@MainActivity)
+                        Log.e("MainActivity", "Continue Sign In Failed", error)
+                        handleSignOut()
+                    }
                 }
         )
     }
 
     private fun handleGetProfile() {
+        LoadingHelper.showLoading(this, "Loading Profile...")
         ZenithApp.getProfile(
                 success = { user ->
                     runOnUiThread {
+                        LoadingHelper.hideLoading(this@MainActivity)
                         val intent =
                                 Intent(this@MainActivity, ProfileActivity::class.java).apply {
                                     putExtra("EXTRA_ID", user.id)
@@ -114,7 +128,12 @@ class MainActivity : ComponentActivity() {
                         startActivity(intent)
                     }
                 },
-                failure = { error -> Log.e("MainActivity", "Get Profile Failed", error) }
+                failure = { error ->
+                    runOnUiThread {
+                        LoadingHelper.hideLoading(this@MainActivity)
+                        Log.e("MainActivity", "Get Profile Failed", error)
+                    }
+                }
         )
     }
 

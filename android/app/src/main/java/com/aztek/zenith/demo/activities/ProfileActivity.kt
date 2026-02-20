@@ -1,4 +1,4 @@
-package com.aztek.zenith.demo
+package com.aztek.zenith.demo.activities
 
 import android.os.Bundle
 import android.widget.Button
@@ -7,6 +7,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.aztek.zenith.ZenithApp
+import com.aztek.zenith.demo.R
+import com.aztek.zenith.demo.utils.LoadingHelper
 
 class ProfileActivity : ComponentActivity() {
 
@@ -40,17 +42,22 @@ class ProfileActivity : ComponentActivity() {
         btnClose.setOnClickListener { finish() }
 
         btnDeleteAccount.setOnClickListener {
+            LoadingHelper.showLoading(this, "Deleting Account...")
             ZenithApp.deleteAccount(this) { exception ->
-                if (exception != null) {
-                    Toast.makeText(
-                                    this,
-                                    "Failed to delete account: ${exception.message}",
-                                    Toast.LENGTH_SHORT
-                            )
-                            .show()
-                } else {
-                    Toast.makeText(this, "Account deleted", Toast.LENGTH_SHORT).show()
-                    finish()
+                runOnUiThread {
+                    LoadingHelper.hideLoading(this@ProfileActivity)
+                    if (exception != null) {
+                        Toast.makeText(
+                                        this@ProfileActivity,
+                                        "Failed to delete account: ${exception.message}",
+                                        Toast.LENGTH_SHORT
+                                )
+                                .show()
+                    } else {
+                        Toast.makeText(this@ProfileActivity, "Account deleted", Toast.LENGTH_SHORT)
+                                .show()
+                        finish()
+                    }
                 }
             }
         }

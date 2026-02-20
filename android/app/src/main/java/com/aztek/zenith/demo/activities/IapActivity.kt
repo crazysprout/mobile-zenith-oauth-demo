@@ -1,4 +1,4 @@
-package com.aztek.zenith.demo
+package com.aztek.zenith.demo.activities
 
 import android.os.Bundle
 import android.util.Log
@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.aztek.zenith.ZenithApp
 import com.aztek.zenith.data.ZenithProduct
 import com.aztek.zenith.data.ZenithTransaction
+import com.aztek.zenith.demo.R
+import com.aztek.zenith.demo.utils.LoadingHelper
 
 class IapActivity : ComponentActivity() {
 
@@ -44,16 +46,19 @@ class IapActivity : ComponentActivity() {
     }
 
     private fun fetchProducts() {
+        LoadingHelper.showLoading(this, "Loading Products...")
         tvStatus.text = "Status: Fetching products..."
         ZenithApp.fetchProducts(
                 onSuccess = { products ->
                     runOnUiThread {
+                        LoadingHelper.hideLoading(this@IapActivity)
                         tvStatus.text = "Status: Products fetched (${products.size})"
                         productsAdapter.submitList(products)
                     }
                 },
                 onFailure = { error ->
                     runOnUiThread {
+                        LoadingHelper.hideLoading(this@IapActivity)
                         tvStatus.text = "Status: Fetch Failed - ${error.message}"
                         Log.e("IapActivity", "Fetch Failed", error)
                     }
@@ -75,16 +80,19 @@ class IapActivity : ComponentActivity() {
     }
 
     private fun fetchHistory() {
+        LoadingHelper.showLoading(this, "Loading History...")
         tvStatus.text = "Status: Fetching history..."
         ZenithApp.purchaseHistory(
                 success = { transactions ->
                     runOnUiThread {
+                        LoadingHelper.hideLoading(this@IapActivity)
                         tvStatus.text = "Status: History fetched (${transactions.size})"
                         historyAdapter.submitList(transactions)
                     }
                 },
                 failure = { error ->
                     runOnUiThread {
+                        LoadingHelper.hideLoading(this@IapActivity)
                         tvStatus.text = "Status: History Fetch Failed - ${error.message}"
                         Log.e("IapActivity", "History Fetch Failed", error)
                     }
@@ -93,15 +101,17 @@ class IapActivity : ComponentActivity() {
     }
 
     private fun purchaseProduct(product: ZenithProduct) {
+        LoadingHelper.showLoading(this, "Purchasing...")
         tvStatus.text = "Status: Purchasing ${product.title}..."
         ZenithApp.purchaseProduct(
                 activity = this,
                 productId = product.id,
                 onSuccess = { purchaseInfo ->
                     runOnUiThread {
+                        LoadingHelper.hideLoading(this@IapActivity)
                         tvStatus.text = "Status: Purchased ${purchaseInfo.productId}!"
                         Toast.makeText(
-                                        this,
+                                        this@IapActivity,
                                         "Success: ${purchaseInfo.productId}",
                                         Toast.LENGTH_LONG
                                 )
@@ -111,11 +121,13 @@ class IapActivity : ComponentActivity() {
                 onPending = {
                     runOnUiThread {
                         tvStatus.text = "Status: Purchase Pending..."
-                        Toast.makeText(this, "Purchase Pending", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@IapActivity, "Purchase Pending", Toast.LENGTH_SHORT)
+                                .show()
                     }
                 },
                 onFailure = { error ->
                     runOnUiThread {
+                        LoadingHelper.hideLoading(this@IapActivity)
                         tvStatus.text = "Status: Purchase Failed - ${error.message}"
                         Log.e("IapActivity", "Purchase Failed", error)
                     }
