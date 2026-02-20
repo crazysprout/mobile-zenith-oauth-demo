@@ -11,6 +11,8 @@ import com.aztek.zenith.demo.R
 import com.aztek.zenith.demo.utils.LoadingHelper
 
 class ProfileActivity : ComponentActivity() {
+    private var isDeletingAccount = false
+    private lateinit var btnDeleteAccount: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +20,7 @@ class ProfileActivity : ComponentActivity() {
 
         val tvDetails = findViewById<TextView>(R.id.tv_profile_details)
         val btnClose = findViewById<ImageButton>(R.id.btn_close)
-        val btnDeleteAccount = findViewById<Button>(R.id.btn_delete_account)
+        btnDeleteAccount = findViewById<Button>(R.id.btn_delete_account)
 
         // Retrieve data passed from MainActivity
         // Assuming we pass fields individually to avoid Parcelable issues if unknown
@@ -29,7 +31,7 @@ class ProfileActivity : ComponentActivity() {
         val isGuest = intent.getBooleanExtra("EXTRA_GUEST", false)
 
         val displayText =
-                """
+            """
             ID: $id
             Username: $username
             Email: $email
@@ -42,24 +44,62 @@ class ProfileActivity : ComponentActivity() {
         btnClose.setOnClickListener { finish() }
 
         btnDeleteAccount.setOnClickListener {
+            if (isDeletingAccount) return@setOnClickListener
+            isDeletingAccount = true
+            btnDeleteAccount.isEnabled = false
             LoadingHelper.showLoading(this, "Deleting Account...")
-            ZenithApp.deleteAccount(this) { exception ->
-                runOnUiThread {
+
+            var isHandled = false
+            val handler = android.os.Handler(android.os.Looper.getMainLooper())
+            val timeoutRunnable = Runnable {
+                if (!isHandled) {
+                    isHandled = true
+                    isDeletingAccount = false
                     LoadingHelper.hideLoading(this@ProfileActivity)
+                    btnDeleteAccount.isEnabled = true
+                    Toast.makeText(
+                        this@ProfileActivity,
+                        "Request timed out, please try again",
+                        Toast.LENGTH_SHORT
+                    )
+                        .show()
+                }
+            }
+            handler.postDelayed(timeoutRunnable, 15000)
+
+            ZenithApp.deleteAccount(this) { exception ->
+                if (isHandled) return@deleteAccount
+                isHandled = true
+                handler.removeCallbacks(timeoutRunnable)
+
+                runOnUiThread {
+                    isDeletingAccount = false
+                    LoadingHelper.hideLoading(this@ProfileActivity)
+                    btnDeleteAccount.isEnabled = true
                     if (exception != null) {
                         Toast.makeText(
-                                        this@ProfileActivity,
-                                        "Failed to delete account: ${exception.message}",
-                                        Toast.LENGTH_SHORT
-                                )
-                                .show()
+                            this@ProfileActivity,
+                            "Failed to delete account: ${exception.message}",
+                            Toast.LENGTH_SHORT
+                        )
+                            .show()
                     } else {
                         Toast.makeText(this@ProfileActivity, "Account deleted", Toast.LENGTH_SHORT)
-                                .show()
+                            .show()
                         finish()
                     }
                 }
             }
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // If the user closed the CustomTab/WebView and returned here, reset UI
+        if (isDeletingAccount) {
+            isDeletingAccount = false
+            LoadingHelper.hideLoading(this)
+            btnDeleteAccount.isEnabled = true
         }
     }
 }
