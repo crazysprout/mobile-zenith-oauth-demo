@@ -11932,14 +11932,42 @@
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4696,
+      "offset": 4674,
+      "length": 79,
+      "value": "\"Zenith SDK is not fully initialized yet. Please wait for setup() to complete.\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4806,
+      "length": 47,
+      "value": "\"Zenith SDK setup failed on re-initialization.\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4906,
+      "length": 26,
+      "value": "\"Failed to setup Zenith: \""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4986,
+      "length": 26,
+      "value": "\"Unsupported sign-in type\""
+    },
+    {
+      "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5086,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/hystrix\/Project\/Zenith SDK Multiplatform\/ios\/ZenithFramework\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4733,
+      "offset": 5123,
       "length": 6,
       "value": "\"POST\""
     },
