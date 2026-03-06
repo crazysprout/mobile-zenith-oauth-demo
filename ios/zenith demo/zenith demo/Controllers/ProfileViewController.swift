@@ -29,13 +29,9 @@ class ProfileViewController: UIViewController {
                     DispatchQueue.main.async {
                         guard let self = self else { return }
                         
-                        if let error = error {
-                            let alert = UIAlertController(title: "Error", message: "Failed to delete account: \(error.localizedDescription)", preferredStyle: .alert)
-                            alert.addAction(UIAlertAction(title: "OK", style: .default))
-                            self.present(alert, animated: true)
-                        } else {
-                            self.dismiss(animated: true, completion: nil)
-                        }
+                        let alert = UIAlertController(title: "Error", message: "Failed to delete account: \(error.localizedDescription)", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default))
+                        self.present(alert, animated: true)
                     }
                 }
             }
