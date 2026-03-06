@@ -138,7 +138,7 @@ class IapViewController: UIViewController, UITableViewDataSource, UITableViewDel
             let formatter = NumberFormatter()
             formatter.numberStyle = .currency
             formatter.locale = product.priceLocale
-            let priceString = formatter.string(from: product.price as NSDecimalNumber) ?? "\(product.price)"
+            let priceString = formatter.string(from: NSNumber(value: product.price)) ?? "\(product.price)"
             
             content.secondaryText = "\(priceString) (\(product.id))"
         }
