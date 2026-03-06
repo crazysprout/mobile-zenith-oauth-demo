@@ -200,9 +200,7 @@ class HistoryAdapter : RecyclerView.Adapter<HistoryAdapter.ViewHolder>() {
 
         fun bind(transaction: ZenithTransaction) {
             // Assuming ZenithTransaction has productId and date/id
-            text1.text =
-                    transaction
-                            .productId // Adjust based on actual ZenithTransaction fields if known,
+            text1.text = transaction.product_id
             // guessing common ones
             text2.text = "Transaction" // Placeholder if detail unknown, or verify ZenithTransaction
             // class
